@@ -117,12 +117,23 @@ defaults:
       search: true
       sidebar: wizz-vis_0_11_0_sidebar
       topnav: wizz-vis_topnav
+  -
+    scope:
+      path: "pages/wdp-cli/0.3.0"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: wdp-cli_0_3_0_sidebar
+      topnav: wdp-cli_topnav
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
 - wdp_1_0_0_sidebar
 - normalizer_0_7_3_sidebar
 - normalizer_0_7_2_sidebar
+- wdp-cli_0.3.0_sidebar
 
 description: "WDP Project Website"
 # the description is used in the feed.xml file

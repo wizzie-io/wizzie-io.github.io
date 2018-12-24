@@ -1,0 +1,87 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Normalizer
+  version: 0.7.2
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Normalizer 0.7.2 Home
+      url: /normalizer_0.7.2_index.html
+      output: web
+      type: homepage
+
+  - title: Getting Started
+    output: web
+    folderitems:
+    - title: Base Tutorial
+      url: /normalizer_0.7.2_base_tutorial.html
+      output: web
+
+  - title: Architecture
+    output: web
+    folderitems:
+    - title: Topology path
+      url: /normalizer_0.7.2_topology_path.html
+      output: web
+    - title: How to scale
+      url: /normalizer_0.7.2_scalability.html
+      output: web
+
+  - title: Configuration
+    output: web
+    folderitems:
+    - title: Base configuration
+      url: /normalizer_0.7.2_base_configuration.html
+      output: web
+    - title: Stream configuration
+      url: /normalizer_0.7.2_stream_configuration.html
+      output: web
+    - title: Bootstrapper
+      url: /normalizer_0.7.2_bootstrapper.html
+      output: web
+    - title: Metrics
+      url: /normalizer_0.7.2_metrics.html
+      output: web
+    - title: Multi Tenant
+      url: /normalizer_0.7.2_multi_tenant.html
+      output: web
+
+  - title: Functions
+    output: web
+    folderitems:
+    - title: Mapper Functions
+      url: /normalizer_0.7.2_mapper_functions.html
+      output: web
+    - title: FlatMapper Functions
+      url: /normalizer_0.7.2_flatmapper_functions.html
+      output: web
+    - title: Filter Functions
+      url: /normalizer_0.7.2_filter_functions.html
+      output: web
+    - title: Debug Functions
+      url: /normalizer_0.7.2_debug_functions.html
+      output: web
+    - title: Functions Repository
+      url: https://wizzie-io.github.io/normalizer-functions/
+      output: web
+
+  - title: Docker
+    output: web
+    folderitems:
+    - title: Docker Configuration
+      url: /normalizer_0.7.2_docker_configuration.html
+      output: web
+    - title: Docker Example
+      url: /normalizer_0.7.2_docker_example.html
+      output: web
+
+  - title: Development
+    output: web
+    folderitems:
+    - title: Custom Functions
+      url: /normalizer_0.7.2_custom_functions.html
+      output: web

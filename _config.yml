@@ -75,37 +75,56 @@ defaults:
       layout: "page"
       comments: true
       search: true
-      sidebar: home_sidebar
-      topnav: topnav
+      sidebar: wdp_1_0_0_sidebar
+      topnav: wdp_topnav
   -
     scope:
-      path: ""
-      type: "tooltips"
+      path: "pages/wdp/1.0.0"
+      type: "pages"
     values:
       layout: "page"
       comments: true
       search: true
-      tooltip: true
-
+      sidebar: wdp_1_0_0_sidebar
+      topnav: wdp_topnav
   -
     scope:
-      path: ""
-      type: "posts"
+      path: "pages/normalizer/0.7.3"
+      type: "pages"
     values:
-      layout: "post"
+      layout: "page"
       comments: true
       search: true
-      sidebar: home_sidebar
-      topnav: topnav
-
+      sidebar: normalizer_0_7_3_sidebar
+      topnav: normalizer_topnav
+  -
+    scope:
+      path: "pages/normalizer/0.7.2"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: normalizer_0_7_2_sidebar
+      topnav: normalizer_topnav
+  -
+    scope:
+      path: "pages/wizz-vis/0.11.0"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: wizz-vis_0_11_0_sidebar
+      topnav: wizz-vis_topnav
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
-- home_sidebar
-- mydoc_sidebar
-- other
+- wdp_1_0_0_sidebar
+- normalizer_0_7_3_sidebar
+- normalizer_0_7_2_sidebar
 
-description: "WDP Project Webiste"
+description: "WDP Project Website"
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only

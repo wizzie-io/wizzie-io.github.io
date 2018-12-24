@@ -1,0 +1,266 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: WDP Docs
+  version: 1.0.0
+  folders:
+
+  - title: Introducing the Wizzie Data Platform (WDP)
+    output: web
+    folderitems:
+
+    - title: Intro, Current technology status, direction & evolution
+      url: /index.html
+      output: web
+      type: homepage
+
+    - title: Executive WDP overview
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: What is WDP for?
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: What can WDP do for me?
+      url: /wdp_1.0.0_index.html
+      output: web
+
+  - title: First steps with WDP
+    output: web
+    folderitems:
+
+    - title: Product subscription
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Setting up a WDP cluster (AWS marketplace)
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Creating an organization
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Collecting data with Prozzie
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Building the WDP workflow
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Working with batuta endpoints
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Creating a simple dashboard
+      url: /wdp_1.0.0_index.html
+      output: web
+
+  - title: WDP Overview (basic architecture)
+    output: web
+    folderitems:
+
+    - title: The WDP Architecture
+      output: web
+      folderitems:
+
+    - title: Global VS user components
+      url: /wdp_1.0.0_index.html
+      output: web
+
+  - title: Prozzie
+    output: web
+
+    folderitems:
+    - title: Installation
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Connectors
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Prozzie CLI
+      url: /wdp_1.0.0_index.html
+      output: web
+
+  - title: WDP Command Line Interface
+    output: web
+
+    folderitems:
+    - title: Syntax
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Internals overview
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Operations
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Examples
+      url: /wdp_1.0.0_index.html
+      output: web
+
+  - title: Manage organizations with Wizz-In
+    output: web
+
+    folderitems:
+    - title: Create users
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Create organizations
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Manage API Keys
+      url: /wdp_1.0.0_index.html
+      output: web
+
+  - title: Wizzie Workflow
+    output: web
+
+    folderitems:
+
+    - title: Normalizer
+      url: /normalizer_0.7.3_index.html
+      output: web
+
+    - title: Enricher
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: ZZ-Cep
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Indexer
+      url: /wdp_1.0.0_index.html
+      output: web
+
+  - title: Manage the Stack with Batuta
+    output: web
+
+    folderitems:
+    - title: Kafka endpoints
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Druid endpoints
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Streams endpoints
+      url: /wdp_1.0.0_index.html
+      output: web
+
+  - title: Visualize Data with Wizz-Vis
+    output: web
+
+    folderitems:
+    - title: Wizz-Vis configuration
+      url: /wizz-vis_0.11.0_configuration.html
+      output: web
+
+    - title: Basic Concepts
+      url: /wizz-vis_0.11.0_basic_concepts.html
+      output: web
+
+    - title: Navigation
+      url: /wizz-vis_0.11.0_navigation.html
+      output: web
+
+    - title: Widgets
+      url: /wizz-vis_0.11.0_widgets.html
+      output: web
+
+    - title: API
+      url: /wizz-vis_0.11.0_api.html
+      output: web
+
+  - title: Managing the AWS Infrastructure
+    output: web
+
+    folderitems:
+
+    - title: AWS Services Architecture
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Operations with CloudFormation Stack
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Accessing WDP instances
+      url: /wdp_1.0.0_index.html
+      output: web
+
+  - title: Extending WDP - Plugins
+    output: web
+    folderitems:
+
+    - title: What is a plugin?
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Available plugins
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Usage
+      url: /wdp_1.0.0_index.html
+      output: web
+
+  - title: Scaling WDP
+    output: web
+    folderitems:
+
+    - title: Introducing flavors
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Scaling WDP components horizontally
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Scaling WDP resources
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Scaling the underlying infrastructure
+      url: /wdp_1.0.0_index.html
+      output: web
+
+  - title: Appendix A. Troubleshooting WDP
+    output: web
+    folderitems:
+
+    - title: WDP Metrics
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Monitoring WDP components
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Analyzing logs
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Diagnosing the problem
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Common errors, Do’s & Dont’s
+      url: /wdp_1.0.0_index.html
+      output: web
+
+    - title: Troubleshooting with kubectl
+      url: /wdp_1.0.0_index.html
+      output: web

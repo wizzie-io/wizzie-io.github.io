@@ -27,11 +27,11 @@ Example configuration file:
 | `application.id`      | This id is used to identify a group of normalizer instances. Normally this id is used to identify different clients.      |  - |
 | `bootstrap.servers`      | A list of host/port pairs to use for establishing the initial connection to the Kafka cluster. The client will make use of all servers irrespective of which servers are specified here for bootstrapping—this list only impacts the initial hosts used to discover the full set of servers. This list should be in the form `host1:port1,host2:port2`      | - |
 | `num.stream.threads`      | The number of threads to execute stream processing.      | 1 |
-| `bootstrapper.classname`      | The bootstrapper class reference. More info: [Bootstrapper](https://wizzie-io.github.io/normalizer/configuration/bootstrapper)       | - |
+| `bootstrapper.classname`      | The bootstrapper class reference. More info: [Bootstrapper](/normalizer_{{page.version}}_bootstrapper.html)       | - |
 | `metric.enable`      | Enable metrics system.      | false |
-| `metric.listeners`      | Array with metrics listeners. More info: [Metrics](https://wizzie-io.github.io/normalizer/configuration/metrics)      | ["io.wizzie.metrics.listeners.ConsoleMetricListener"] |
+| `metric.listeners`      | Array with metrics listeners. More info: [Metrics](/normalizer_{{page.version}}_metrics.html)      | ["io.wizzie.metrics.listeners.ConsoleMetricListener"] |
 | `metric.interval`      | Metric report interval (milliseconds)      |  60000 |
-| `multi.id`      | This property is used when you have multiple normalizer instances with differences `application.id` and the normalizer uses the same topic names. More Info [Multi Tenant](https://wizzie-io.github.io/normalizer/configuration/multi_tenant)      |  false |
+| `multi.id`      | This property is used when you have multiple normalizer instances with differences `application.id` and the normalizer uses the same topic names. More Info [Multi Tenant](/normalizer_{{page.version}}_multi_tenant)      |  false |
 | `metric.enable`      | Enable metrics system.      | false |
 | `max.kafka.output.topics` | Max number of kafka topics that the normalizer can create to send data using the stream config | Integer.MAX_VALUE |
 

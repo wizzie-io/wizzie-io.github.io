@@ -117,6 +117,16 @@ defaults:
       search: true
       sidebar: wizz-vis_0_11_0_sidebar
       topnav: wizz-vis_topnav
+  -
+    scope:
+      path: "pages/enricher/0.6.1"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: enricher_0_6_1_sidebar
+      topnav: enricher_topnav
 # these are defaults used for the frontmatter for these file types
 
 sidebars:

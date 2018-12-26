@@ -5,7 +5,7 @@ permalink: /normalizer_0.7.2_stream_configuration.html
 toc: true
 ---
 
-The stream configuration is the execution plan of the normalizer. Normalizer uses the stream configuration to build the Kafka Streams topology using DSL API. You can configure how the normalizer gets the stream conf to do it you need to use the [Bootstrappers](https://github.com/wizzie-io/normalizer/wiki/Bootstrapper).
+The stream configuration is the execution plan of the normalizer. Normalizer uses the stream configuration to build the Kafka Streams topology using DSL API. You can configure how the normalizer gets the stream conf to do it you need to use the [Bootstrappers](/normalizer_{{page.version}}_bootstrapper.html).
 
 Stream configuration has two main sections:
 
@@ -60,7 +60,7 @@ The `streams` section is made by streams (json objects):
 The streams objects are made by a key and a body. The key is the stream's name that you define previously on `input` section and the body is made by `funcs` and `sinks`.
 
 #### funcs
-The `funcs` is a JSON Array where you define different [functions](https://github.com/wizzie-io/normalizer/wiki/Functions) to transforms the stream. The **transformations are sequential** so the order when you are defining the functions is so important!!
+The `funcs` is a JSON Array where you define different [functions](/normalizer_{{page.version}}_mapper_functions.html) to transform the stream. The **transformations are sequential** so the order when you are defining the functions is so important!!
 
 #### sinks
 The `sinks` is a JSON Array where you define sinks. You can define two types of sinks:
@@ -70,7 +70,7 @@ The `sinks` is a JSON Array where you define sinks. You can define two types of 
 
 You can indicate what sink type do you want to use using the field `type`, by default the type is `kafka`.
 
-Sinks also have the option to configure a filter that is apply to the stream before send the messages through the sink, to define a filter you need to use the field `filter` and use some [filter function](https://github.com/wizzie-io/normalizer/wiki/Functions#filter-functions).
+Sinks also have the option to configure a filter that is apply to the stream before send the messages through the sink, to define a filter you need to use the field `filter` and use some [filter function](/normalizer_{{page.version}}_filter_functions).
 
 ```json
       "sinks": [

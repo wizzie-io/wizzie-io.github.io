@@ -133,6 +133,7 @@ sidebars:
 - wdp_1_0_0_sidebar
 - normalizer_0_7_3_sidebar
 - normalizer_0_7_2_sidebar
+- enricher_0_6_1_sidebar
 
 description: "WDP Project Website"
 # the description is used in the feed.xml file

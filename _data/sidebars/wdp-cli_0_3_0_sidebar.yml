@@ -1,0 +1,37 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: WDP-CLI
+  version: 0.3.0
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: WDP-CLI 0.3.0 Home
+      url: /wdp-cli_0.3.0_index.html
+      output: web
+      type: homepage
+
+  - title: Getting Started
+    output: web
+    folderitems:
+    - title: Installation
+      url: /wdp-cli_0.3.0_install.html
+      output: web
+    - title: Base Tutorial
+      url: /wdp-cli_0.3.0_base_tutorial.html
+      output: web
+
+  - title: Internals overview
+    url: /wdp-cli_0.3.0_internals.html
+    output: web
+
+  - title: Operations
+    url: /wdp-cli_0.3.0_operations.html
+    output: web
+
+  - title: Examples
+    url: /wdp-cli_0.3.0_examples.html
+    output: web

@@ -1,0 +1,28 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Prelude
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Prelude Ecosystem Home
+      url: /prelude_index.html
+      output: web
+      type: homepage
+
+  - title: Terra-Box
+    output: web
+    folderitems:
+    - title: Terra-Box Home
+      url: /terrabox_index.html
+      output: web
+
+  - title: Wizzie Prelude library
+    output: web
+    folderitems:
+    - title: Wizzie Prelude home
+      url: /wizzie_prelude_index.html
+      output: web

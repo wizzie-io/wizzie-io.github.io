@@ -89,6 +89,16 @@ defaults:
       topnav: wdp_topnav
   -
     scope:
+      path: "pages/normalizer/latest"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: normalizer_latest_sidebar
+      topnav: normalizer_topnav
+  -
+    scope:
       path: "pages/normalizer/0.7.3"
       type: "pages"
     values:
@@ -134,6 +144,7 @@ sidebars:
 - normalizer_0_7_3_sidebar
 - normalizer_0_7_2_sidebar
 - wdp-cli_0.3.0_sidebar
+- normalizer_latest_sidebar
 
 description: "WDP Project Website"
 # the description is used in the feed.xml file

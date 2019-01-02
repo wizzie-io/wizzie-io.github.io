@@ -16,6 +16,8 @@ topnav_dropdowns:
           url: /index.html
     - title: Normalizer Versions
       folderitems:
+        - title: Normalizer Latest
+          url: /normalizer_latest_index.html
         - title: Normalizer 0.7.3
           url: /normalizer_0.7.3_index.html
         - title: Normalizer 0.7.2

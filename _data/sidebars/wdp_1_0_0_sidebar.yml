@@ -71,6 +71,22 @@ entries:
       url: /wdp_1.0.0_index.html
       output: web
 
+  - title: Deploying WDP
+    output: web
+    folderitems:
+
+    - title: Prelude Ecosystem
+      url: /prelude_index.html
+      output: web
+
+    - title: Terra-Box
+      url: /terra-box_index.html
+      output: web
+
+    - title: Wizzie Prelude library
+      url: /wizzie_prelude_index.html
+      output: web
+
   - title: Prozzie
     output: web
 
@@ -91,20 +107,8 @@ entries:
     output: web
 
     folderitems:
-    - title: Syntax
-      url: /wdp_1.0.0_index.html
-      output: web
-
-    - title: Internals overview
-      url: /wdp_1.0.0_index.html
-      output: web
-
-    - title: Operations
-      url: /wdp_1.0.0_index.html
-      output: web
-
-    - title: Examples
-      url: /wdp_1.0.0_index.html
+    - title: WDP-CLI Manual Reference
+      url: /wdp-cli_0.3.0_index.html
       output: web
 
   - title: Manage organizations with Wizz-In

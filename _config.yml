@@ -119,6 +119,16 @@ defaults:
       topnav: wizz-vis_topnav
   -
     scope:
+      path: "pages/zz-cep/0.5.1"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: zz-cep_0_5_1_sidebar
+      topnav: zz-cep_topnav
+  -
+    scope:
       path: "pages/wdp-cli/0.3.0"
       type: "pages"
     values:
@@ -133,6 +143,7 @@ sidebars:
 - wdp_1_0_0_sidebar
 - normalizer_0_7_3_sidebar
 - normalizer_0_7_2_sidebar
+- zz-cep_0_5_1_sidebar
 - wdp-cli_0.3.0_sidebar
 
 description: "WDP Project Website"

@@ -16,5 +16,7 @@ topnav_dropdowns:
           url: /index.html
     - title: Enricher Versions
       folderitems:
+        - title: Enricher Latest
+          url: /enricher_latest_index.html
         - title: Enricher 0.6.1
           url: /enricher_0.6.1_index.html

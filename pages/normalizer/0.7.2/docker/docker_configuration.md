@@ -47,7 +47,7 @@ Once kafka broker is up, we can start a Normalizer container and link it to the 
 $ docker run --rm --name my-normalizer --net=host -e APPLICATION_ID=my-normalizer-app -e KAFKA_BOOTSTRAP_SERVER=localhost:9092 wizzieio/normalizer:latest
 ```
 
-Now you can follow the [base tutorial](http://wizzie-io.github.io/normalizer/getting/getting-started.html) to test Normalizer!
+Now you can follow the [base tutorial](/normalizer_{{page.version}}_base_tutorial.html) to test Normalizer!
 
 ### Using environment variables in normalizer configuration
 
@@ -60,7 +60,7 @@ You can configure the docker image using these environment properties:
 | `NUM_STREAM_THREADS` |  Number parallelism | 1|
 | `METRIC_ENABLE` | Enable the metrics |  true  |
 | `METRIC_INTERVAL`|The interval time to report metrics (milliseconds) | 60000 |
-| `MULTI_ID`| Configure the `multi.id` property [Multi Tenant](http://wizzie-io.github.io/normalizer/conf/multi-tenant.html) | false |
+| `MULTI_ID`| Configure the `multi.id` property [Multi Tenant](/normalizer_{{page.version}}_multi_tenant.html) | false |
 | `MAX_OUTPUT_KAFKA_TOPICS`| Max limit of output kafka topics | 500 |
 
-You can found more information about base configuration [here](http://wizzie-io.github.io/normalizer/conf/base-configuration.html)
+You can found more information about base configuration [here](/normalizer_{{page.version}}_base_configuration.html)

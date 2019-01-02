@@ -1,0 +1,74 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Enricher
+  version: 0.6.1
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Enricher 0.6.1 Home
+      url: /enricher_0.6.1_index.html
+      output: web
+      type: homepage
+
+  - title: Getting Started
+    output: web
+    folderitems:
+    - title: Base Tutorial
+      url: /enricher_0.6.1_base_tutorial.html
+      output: web
+
+  - title: Configuration
+    output: web
+    folderitems:
+    - title: Base configuration
+      url: /enricher_0.6.1_base_configuration.html
+      output: web
+    - title: Stream configuration
+      url: /enricher_0.6.1_stream_configuration.html
+      output: web
+    - title: Enrichment Query Language
+      url: /enricher_0.6.1_eql_syntax.html
+      output: web
+    - title: Bootstrapper
+      url: /enricher_0.6.1_bootstrapper.html
+      output: web
+    - title: Metrics
+      url: /enricher_0.6.1_metrics.html
+      output: web
+    - title: Multi Tenant
+      url: /enricher_0.6.1_multi_tenant.html
+      output: web
+    - title: How to scale
+      url: /enricher_0.6.1_scalability.html
+      output: web
+
+  - title: Joiners & Enrichers
+    output: web
+    folderitems:
+    - title: Joiners
+      url: /enricher_0.6.1_joiners.html
+      output: web
+    - title: Enrichers
+      url: /enricher_0.6.1_enrichers.html
+      output: web
+
+  - title: Docker
+    output: web
+    folderitems:
+    - title: Docker Configuration
+      url: /enricher_0.6.1_docker_configuration.html
+      output: web
+    - title: Docker Example
+      url: /enricher_0.6.1_docker_example.html
+      output: web
+
+  - title: Development
+    output: web
+    folderitems:
+    - title: Custom Joiners
+      url: /enricher_0.6.1_custom_joiners.html
+      output: web

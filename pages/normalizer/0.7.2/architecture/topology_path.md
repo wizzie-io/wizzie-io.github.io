@@ -37,7 +37,7 @@ For example, if you send the next stream to normalizer:
 
 Internally the normalizer will build next topology path in Kafka Streams:
 
-![Simple Topology](../assets/images/architecture/simple-topology.png)
+{% include image.html file="normalizer/architecture/simple-topology.png" alt="Simple Topology" caption="Simple topology" %}
 
 ## Allowed Topology Path
 
@@ -72,7 +72,7 @@ Topology path between streams:
 ```
 With the next result:
 
-![Loop between streams](../assets/images/architecture/topology-path-1.png)
+{% include image.html file="normalizer/architecture/topology-path-1.png" alt="Topology Path 1" caption="Topology path 1" %}
 
 Topology path to streams:
 
@@ -126,7 +126,7 @@ Topology path to streams:
 
 With the next result:
 
-![Loop to streams](../assets/images/architecture/topology-path-2.png)
+{% include image.html file="normalizer/architecture/topology-path-2.png" alt="Topology Path 2" caption="Topology path 2" %}
 
 As you can observe you can create topology path between streams if the distance between there is one hop.
 
@@ -134,6 +134,6 @@ As you can observe you can create topology path between streams if the distance 
 
 Normalizer cannot create the next topology paths:
 
-![Loop to streams](../assets/images/architecture/not-allowed-topology-path.png)
+{% include image.html file="normalizer/architecture/not-allowed-topology-path.png" alt="Not allowed topology path" caption="Topology path not allowed" %}
 
 If you try to create a loop between streams, normalizer will throw a `TryToDoLoopException`.

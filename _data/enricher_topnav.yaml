@@ -1,0 +1,20 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  items:
+    - title: GitHub
+      external_url: https://github.com/wizzie-io/wizzie-io.github.io
+
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: WDP Versions
+      folderitems:
+        - title: WDP 1.0.0
+          url: /index.html
+    - title: Enricher Versions
+      folderitems:
+        - title: Enricher 0.6.1
+          url: /enricher_0.6.1_index.html

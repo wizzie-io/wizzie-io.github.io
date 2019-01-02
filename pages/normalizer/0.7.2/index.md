@@ -4,10 +4,11 @@ version: 0.7.2
 permalink: /normalizer_0.7.2_index.html
 toc: false
 ---
+{% include image.html file="normalizer/logo.svg" alt="Normalizer" %}
 
 Normalizer is a stream processing engine based on Kafka Streams. Normalizer does maps (stateless and statefull), flatmaps and filters by us. You only need to define a JSON stream where you specify the process logic and how the message are transformed.
 It allows you to normalize data streams from different sources to convert them to the same data schema!
-Normalizer offers us: scalability, fault tolerance, back-pressure, KV states (RocksDB) and full Kafka integration ... [Try it now!!](https://wizzie-io.github.io/normalizer/getting_started/base_tutorial)
+Normalizer offers us: scalability, fault tolerance, back-pressure, KV states (RocksDB) and full Kafka integration ... [Try it now!!](/normalizer_{{page.version}}_base_tutorial.html)
 
 It reads json messages from Apache Kafka and writes them back normalized to Kafka.
  

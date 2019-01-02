@@ -119,6 +119,16 @@ defaults:
       topnav: wizz-vis_topnav
   -
     scope:
+      path: "pages/enricher/0.6.1"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: enricher_0_6_1_sidebar
+      topnav: enricher_topnav
+  -
+    scope:
       path: "pages/zz-cep/0.5.1"
       type: "pages"
     values:
@@ -137,12 +147,14 @@ defaults:
       search: true
       sidebar: wdp-cli_0_3_0_sidebar
       topnav: wdp-cli_topnav
+
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
 - wdp_1_0_0_sidebar
 - normalizer_0_7_3_sidebar
 - normalizer_0_7_2_sidebar
+- enricher_0_6_1_sidebar
 - zz-cep_0_5_1_sidebar
 - wdp-cli_0.3.0_sidebar
 

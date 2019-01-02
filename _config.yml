@@ -129,6 +129,16 @@ defaults:
       topnav: wizz-vis_topnav
   -
     scope:
+      path: "pages/enricher/latest"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: enricher_latest_sidebar
+      topnav: enricher_topnav
+  -
+    scope:
       path: "pages/enricher/0.6.1"
       type: "pages"
     values:

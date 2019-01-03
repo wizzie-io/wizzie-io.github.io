@@ -3,6 +3,7 @@ title: Enricher 0.6.1
 version: 0.6.1
 permalink: /enricher_0.6.1_bootstrapper.html
 toc: true
+serviceImage: enricher/logo.svg
 ---
 
 The bootstrapper is the mechanism that is used to load stream config into enricher. You can configure the boostrapper class on the config file, using `bootstrapper.classname` property. Currently, the enricher has two bootstrappers:

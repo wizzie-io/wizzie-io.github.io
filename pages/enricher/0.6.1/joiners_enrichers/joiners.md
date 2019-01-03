@@ -3,6 +3,7 @@ title: Enricher 0.6.1
 version: 0.6.1
 permalink: /enricher_0.6.1_joiners.html
 toc: true
+serviceImage: enricher/logo.svg
 ---
 
 The joiners allows you join two streams yields results if both records in each stream are timely close to each other (i.e., both events happened within a certain time frame).

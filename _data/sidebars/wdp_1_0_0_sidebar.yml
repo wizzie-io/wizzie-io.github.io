@@ -136,6 +136,10 @@ entries:
       url: /normalizer_0.7.3_index.html
       output: web
 
+    - title: Normalizer Functions
+      url: /normalizer-functions_latest_index.html
+      output: web
+
     - title: Enricher
       url: /enricher_0.6.1_index.html
       output: web

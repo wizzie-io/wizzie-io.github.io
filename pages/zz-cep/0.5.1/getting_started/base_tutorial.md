@@ -3,6 +3,7 @@ title: ZZ-Cep 0.5.1
 version: 0.5.1
 permalink: /zz-cep_0.5.1_base_tutorial.html
 toc: true
+serviceImage: zz-cep/logo.svg
 ---
 
 On this page, we can to try a stream example using a real Kafka cluster and the cep jar artifact. We are going to suppose that you have built the cep distribution how we explain on the [Building](https://github.com/wizzie-io/zz-cep#compiling-sources) section.

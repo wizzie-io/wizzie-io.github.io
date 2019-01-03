@@ -3,6 +3,7 @@ title: Enricher latest
 version: latest
 permalink: /enricher_latest_custom_joiners.html
 toc: true
+serviceImage: enricher/logo.svg
 ---
 
 On this section, we are trying to explain how to develop your own [joiners](/enricher_{{page.version}}_joiners.html).

@@ -3,6 +3,7 @@ title: Normalizer Custom Functions
 version: 0.7.3
 permalink: /normalizer_0.7.3_custom_functions.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
 ## Functions Library

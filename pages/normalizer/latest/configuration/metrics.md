@@ -3,6 +3,7 @@ title: Normalizer Metrics
 version: latest
 permalink: /normalizer_latest_metrics.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
 The Normalizer service uses the [Wizzie Metrics Library](https://github.com/wizzie-io/metrics-library) to build his metrics, by default it sends JVM metrics but you can register new metrics that will be exported too.

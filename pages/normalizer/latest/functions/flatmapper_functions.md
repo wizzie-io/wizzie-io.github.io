@@ -3,6 +3,7 @@ title: Normalizer Flat Mapper Functions
 version: latest
 permalink: /normalizer_latest_flatmapper_functions.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
 The flat mapper functions transforms stream one message to zero or many messages `1 to zero OR 1 to many`.

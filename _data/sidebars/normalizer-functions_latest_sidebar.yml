@@ -1,0 +1,28 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Normalizer-Functions
+  version: latest
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Normalizer Functions Latest Home
+      url: /normalizer-functions_latest_index.html
+      output: web
+      type: homepage
+
+  - title: Functions Packages
+    output: web
+    folderitems:
+    - title: Mobility
+      url: /normalizer-functions_latest_mobility.html
+      output: web
+    - title: Networking
+      url: /normalizer-functions_latest_networking.html
+      output: web
+    - title: Aerohive
+      url: /normalizer-functions_latest_aerohive.html
+      output: web

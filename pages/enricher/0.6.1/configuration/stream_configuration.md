@@ -3,6 +3,7 @@ title: Enricher 0.6.1
 version: 0.6.1
 permalink: /enricher_0.6.1_stream_configuration.html
 toc: true
+serviceImage: enricher/logo.svg
 ---
 
 The stream configuration is the execution plan of the enricher. Enricher uses the stream configuration to build the Kafka Streams topology using DSL API. You can configure how the enricher gets the stream conf. To do it you need to use [Bootstrappers](/enricher_{{page.version}}_bootstrapper.html).

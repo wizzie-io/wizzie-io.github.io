@@ -3,6 +3,7 @@ title: Enricher 0.6.1
 version: 0.6.1
 permalink: /enricher_0.6.1_docker_configuration.html
 toc: true
+serviceImage: enricher/logo.svg
 ---
 
 ## How to get Enricher image

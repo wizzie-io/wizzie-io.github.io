@@ -3,6 +3,7 @@ title: Enricher latest
 version: latest
 permalink: /enricher_latest_docker_example.html
 toc: false
+serviceImage: enricher/logo.svg
 ---
 
 We are going to follow the [Base tutorial](/enricher_{{page.version}}_base_tutorial.html) but using docker and docker-compose.

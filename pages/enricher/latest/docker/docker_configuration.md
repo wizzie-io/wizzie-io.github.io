@@ -3,6 +3,7 @@ title: Enricher latest
 version: latest
 permalink: /enricher_latest_docker_configuration.html
 toc: true
+serviceImage: enricher/logo.svg
 ---
 
 ## How to get Enricher image

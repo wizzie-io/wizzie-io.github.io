@@ -3,6 +3,7 @@ title: Enricher 0.6.1
 version: 0.6.1
 permalink: /enricher_0.6.1_scalability.html
 toc: false
+serviceImage: enricher/logo.svg
 ---
 
 

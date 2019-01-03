@@ -3,6 +3,7 @@ title: Normalizer Docker Configuration
 version: 0.7.3
 permalink: /normalizer_0.7.3_docker_configuration.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
 Normalizer image: `wizzieio/normalizer:latest`

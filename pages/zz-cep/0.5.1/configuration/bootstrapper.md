@@ -3,6 +3,7 @@ title: ZZ-Cep 0.5.1
 version: 0.5.1
 permalink: /zz-cep_0.5.1_bootstrapper.html
 toc: true
+serviceImage: zz-cep/logo.svg
 ---
 
 The bootstrapper is the mechanism that is used to load stream config into cep. You can configure the boostrapper class on the config file, using `bootstrapper.classname` property. Currently, the cep has two bootstrappers:

@@ -3,6 +3,7 @@ title: Normalizer Stream Configuration
 version: latest
 permalink: /normalizer_latest_stream_configuration.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
 The stream configuration is the execution plan of the normalizer. Normalizer uses the stream configuration to build the Kafka Streams topology using DSL API. You can configure how the normalizer gets the stream conf to do it you need to use the [Bootstrappers](/normalizer_{{page.version}}_bootstrapper.html).

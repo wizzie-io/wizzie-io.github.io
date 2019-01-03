@@ -3,6 +3,7 @@ title: Normalizer Debug Functions
 version: latest
 permalink: /normalizer_latest_debug_functions.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
 Currently, the normalizer has two debug functions, both mappers. You can add these mappers into the stream processing to debug.

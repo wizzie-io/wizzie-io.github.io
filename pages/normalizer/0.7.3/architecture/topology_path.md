@@ -3,6 +3,7 @@ title: Normalizer Topology Path
 version: 0.7.3
 permalink: /normalizer_0.7.3_topology_path.html
 toc: false
+serviceImage: normalizer/logo.svg
 ---
 
 Normalizer uses [Kafka Stream](https://kafka.apache.org/documentation/streams/) to build the topology path of normalizer's streams. Kafka Streams allows us to implement and create functions, filters, and sinks to handle the data information.

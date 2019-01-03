@@ -3,6 +3,7 @@ title: Normalizer Mapper Functions
 version: 0.7.2
 permalink: /normalizer_0.7.2_mapper_functions.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
 The mapper functions transforms the stream one message to another message `1 to 1`.

@@ -3,6 +3,7 @@ title: ZZ-Cep 0.5.1
 version: 0.5.1
 permalink: /zz-cep_0.5.1_stream_configuration.html
 toc: true
+serviceImage: zz-cep/logo.svg
 ---
 
 The stream configuration is the execution plan of the cep. Cep uses the stream configuration to build the Siddhi processing model using Kafka. You can configure how the cep gets the stream conf to do it you need to use the [Bootstrappers](/zz-cep_{{page.version}}_bootstrapper.html).

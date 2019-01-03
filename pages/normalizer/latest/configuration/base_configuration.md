@@ -3,6 +3,7 @@ title: Normalizer Base Configuration
 version: latest
 permalink: /normalizer_latest_base_configuration.html
 toc: false
+serviceImage: normalizer/logo.svg
 ---
 
 The configuration file is a JSON format file where you specific the general properties to configure the normalizer instance. This file is different that stream config file that define the KS topology.

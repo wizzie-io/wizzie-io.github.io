@@ -3,6 +3,7 @@ title: Normalizer Bootstrapper
 version: latest
 permalink: /normalizer_latest_bootstrapper.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
 The bootstrapper is the mechanism that is used to load stream config into normalizer. You can configure the boostrapper class on the config file, using `bootstrapper.classname` property. Currently, the normalizer has two bootstrappers:

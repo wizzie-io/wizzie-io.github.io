@@ -3,6 +3,7 @@ title: Enricher latest
 version: latest
 permalink: /enricher_latest_enrichers.html
 toc: true
+serviceImage: enricher/logo.svg
 ---
 
 The Base Enrich is a simple enricher that complements the information of received messages.

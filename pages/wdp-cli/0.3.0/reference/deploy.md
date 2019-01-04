@@ -10,6 +10,10 @@ toc: false
 configuration. See [Terra-box]() and [Prelude]() documentation to learn basic
 concepts of WDP deploy management. 
 
+{% include note.html content="`wdp deploy` command works with the WDP deploy configured
+as current on the CLI configuration. You can manage this configuration with
+the [config](wdp-cli_0.3.0_config.html) command." %}
+
 ## Version management
 
 ### version

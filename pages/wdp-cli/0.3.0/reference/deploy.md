@@ -7,7 +7,7 @@ toc: false
 {% include toch3.html %}
 
 `Deploy` command allows you to make deployments and manage WDP components lifecycle and
-configuration. See [Terra-box]() and [Prelude]() documentation to learn basic
+configuration. See [Terra-box](terra-box_index.html) and [Prelude](wizzie_prelude_index.html) documentation to learn basic
 concepts of WDP deploy management. 
 
 {% include note.html content="`wdp deploy` command works with the WDP deploy configured

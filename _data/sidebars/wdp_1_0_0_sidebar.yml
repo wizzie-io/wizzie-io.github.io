@@ -137,7 +137,7 @@ entries:
       output: web
 
     - title: Enricher
-      url: /wdp_1.0.0_index.html
+      url: /enricher_0.6.1_index.html
       output: web
 
     - title: ZZ-Cep

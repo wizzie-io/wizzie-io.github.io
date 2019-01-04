@@ -1,7 +1,7 @@
 ---
 title: Normalizer Stream Configuration
-version: 0.7.2
-permalink: /normalizer_0.7.2_stream_configuration.html
+version: latest
+permalink: /normalizer_latest_stream_configuration.html
 toc: true
 ---
 

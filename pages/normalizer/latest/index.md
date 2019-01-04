@@ -1,7 +1,7 @@
 ---
-title: Normalizer 0.7.2
-version: 0.7.2
-permalink: /normalizer_0.7.2_index.html
+title: Normalizer latest
+version: latest
+permalink: /normalizer_latest_index.html
 toc: false
 ---
 {% include image.html file="normalizer/logo.svg" alt="Normalizer" %}

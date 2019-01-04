@@ -1,7 +1,7 @@
 ---
 title: Normalizer Base Configuration
-version: 0.7.2
-permalink: /normalizer_0.7.2_base_configuration.html
+version: latest
+permalink: /normalizer_latest_base_configuration.html
 toc: false
 ---
 

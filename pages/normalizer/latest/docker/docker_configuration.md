@@ -1,7 +1,7 @@
 ---
 title: Normalizer Docker Configuration
-version: 0.7.2
-permalink: /normalizer_0.7.2_docker_configuration.html
+version: latest
+permalink: /normalizer_latest_docker_configuration.html
 toc: true
 ---
 

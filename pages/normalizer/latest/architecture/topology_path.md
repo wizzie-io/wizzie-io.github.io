@@ -1,7 +1,7 @@
 ---
 title: Normalizer Topology Path
-version: 0.7.2
-permalink: /normalizer_0.7.2_topology_path.html
+version: latest
+permalink: /normalizer_latest_topology_path.html
 toc: false
 ---
 

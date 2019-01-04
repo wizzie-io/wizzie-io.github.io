@@ -1,0 +1,74 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Enricher
+  version: latest
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Enricher Latest Home
+      url: /enricher_latest_index.html
+      output: web
+      type: homepage
+
+  - title: Getting Started
+    output: web
+    folderitems:
+    - title: Base Tutorial
+      url: /enricher_latest_base_tutorial.html
+      output: web
+
+  - title: Configuration
+    output: web
+    folderitems:
+    - title: Base configuration
+      url: /enricher_latest_base_configuration.html
+      output: web
+    - title: Stream configuration
+      url: /enricher_latest_stream_configuration.html
+      output: web
+    - title: Enrichment Query Language
+      url: /enricher_latest_eql_syntax.html
+      output: web
+    - title: Bootstrapper
+      url: /enricher_latest_bootstrapper.html
+      output: web
+    - title: Metrics
+      url: /enricher_latest_metrics.html
+      output: web
+    - title: Multi Tenant
+      url: /enricher_latest_multi_tenant.html
+      output: web
+    - title: How to scale
+      url: /enricher_latest_scalability.html
+      output: web
+
+  - title: Joiners & Enrichers
+    output: web
+    folderitems:
+    - title: Joiners
+      url: /enricher_latest_joiners.html
+      output: web
+    - title: Enrichers
+      url: /enricher_latest_enrichers.html
+      output: web
+
+  - title: Docker
+    output: web
+    folderitems:
+    - title: Docker Configuration
+      url: /enricher_latest_docker_configuration.html
+      output: web
+    - title: Docker Example
+      url: /enricher_latest_docker_example.html
+      output: web
+
+  - title: Development
+    output: web
+    folderitems:
+    - title: Custom Joiners
+      url: /enricher_latest_custom_joiners.html
+      output: web

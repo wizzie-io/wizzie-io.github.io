@@ -14,11 +14,9 @@ topnav_dropdowns:
       folderitems:
         - title: WDP 1.0.0
           url: /index.html
-    - title: Normalizer Versions
+    - title: Enricher Versions
       folderitems:
-        - title: Normalizer Latest
-          url: /normalizer_latest_index.html
-        - title: Normalizer 0.7.3
-          url: /normalizer_0.7.3_index.html
-        - title: Normalizer 0.7.2
-          url: /normalizer_0.7.2_index.html
+        - title: Enricher Latest
+          url: /enricher_latest_index.html
+        - title: Enricher 0.6.1
+          url: /enricher_0.6.1_index.html

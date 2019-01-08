@@ -10,14 +10,14 @@ preexisting Kubernetes cluster, and make some common operations with it.
 
 ### Prerequisites
 
-- A preconfigured [Kubernetes](https://kubernetes.io/) cluster
+- A preconfigured [Kubernetes](https://kubernetes.io/) cluster.
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) installed
 and with context configured to have admin access to this kubernetes cluster.
-- WDP-CLI installed
+- WDP-CLI installed.
 - A S3 Bucket and Access Keys with write permissions on this bucket. 
-- A postgresql database
+- A postgresql database.
 
-We recommend to read documentation about Prelude and Terra-box before follow 
+We recommend to read documentation about [Prelude and Terra-box](prelude_index.html) before follow 
 this tutorial to learn some important concepts. 
 
 ### Adding a new deploy
@@ -35,7 +35,7 @@ Then, you can execute to create a deploy called `example`:
 wdp config deploy add example -t <TERRABOX_URL> -s <STORAGE_URL> -k <K8S_CONTEXT>
 ```
 
-More information about this command in the [CLI Reference]()
+More information about this command in the [CLI Reference](wdp-cli_0.3.0_config.html#add)
 
 ### Configuring WDP version and platform
 
@@ -60,8 +60,8 @@ wdp deploy use-platform onpremise
 
 ### Editing vars
 
-As it's explained on [Terra-box documentation](), we need to configure some
-required variables in order deploy [global components]() of WDP. 
+As it's explained on [Terra-box documentation](terra-box_index.html), we need to configure some
+required variables in order deploy global components of WDP. 
 
 For our example, we need to edit base and platform vars. Let's start with base. 
 Executing `wdp deploy edit base`, a text editor will be opened to edit base variables:
@@ -160,5 +160,5 @@ Are you sure to apply the current deploy? [y/N]
 ```
 Press `y` to apply them and wait for deployment to finish. 
 
-Check the [CLI reference]() to know more about this command. 
+Check the [CLI reference](wdp-cli_0.3.0_deploy.html#apply) to know more about this command. 
 

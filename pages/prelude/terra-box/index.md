@@ -12,7 +12,7 @@ This page describes how the project is organized and explains a few of concepts 
 
 ## Terra-Box Definition Tree (TDT) {#tdt}
 
-WDP is composed by several microservices or components which work together. On Terra-Box, a set of components is defined by a "Terra-Box Definition Tree" (TDT). It is a way of organizing the Terraform files which defines how a component is deployed on Kubernetes. A TDT is organized on the following folders:
+WDP is composed by several microservices and components which work together. On Terra-Box, a set of components is defined by a "Terra-Box Definition Tree" (TDT). It is a way of organizing the Terraform files which defines how a component is deployed on Kubernetes. A TDT is organized on the following folders:
 
 * modules
 * main
@@ -22,15 +22,13 @@ WDP is composed by several microservices or components which work together. On T
 
 ### modules
 
-This is the place where the WDP components are defined. Each component definition is created as a Terraform module and it can be imported and used by a higher level module (defined in "main").
+This is the place where the WDP components are defined. Each component definition is created as a Terraform module and it can be imported and used by a higher level module (defined at "main").
 
 For instance, Wizz-Vis is a WDP component defined in `modules`. It has two Terraform files:
 
 * `main.tf` where the kubernetes resources which deploys Wizz-Vis are defined. This module creates several kubernetes [deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment), a [service](https://kubernetes.io/docs/concepts/services-networking/service/) and a [secret](https://kubernetes.io/docs/concepts/configuration/secret).
 
-* `vars.tf` where the module [Input Variables](https://learn.hashicorp.com/terraform/getting-started/variables) (commonly simply called as **vars**) are declared. Module vars let us to parametrize configuration details of the component. E.g.: The password of the admin user.
-
-Most of this components can be deployed on kubernetes in a isolated way but some of them might have dependencies.
+* `vars.tf` where the module [Input Variables](https://learn.hashicorp.com/terraform/getting-started/variables) (commonly simply called as **vars**) are declared. Module vars let us to parametrize configuration details of the component. E.g.: The admin user password.
 
 ### main {#mainmodules}
 
@@ -96,4 +94,4 @@ In order to deploy a complete WDP we need to process all the involved components
 
 {% include image.html file="terra-box/Terra-BoxProcess.png" alt="Terra-Box Process" max-width=500 %}
 
-However, as we have seen, main modules and templates are not centralize. Thus, to apply `terraform` commands, a pre-processing is needed. This processing is made by Prelude.
+However, as we have seen, main modules and templates are not centralize. Thus, to apply `terraform` commands, a pre-processing is needed. This processing is made by [Prelude](https://wizzie-io.github.io/wizzie_prelude_index.html).

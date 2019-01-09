@@ -145,7 +145,7 @@ entries:
       output: web
 
     - title: Indexer
-      url: /wdp_1.0.0_index.html
+      url: /wdp_1.0.0_indexer_index.html
       output: web
 
   - title: Manage the Stack with Batuta

@@ -1,5 +1,5 @@
 ---
-title: Normalizer Functions latest
+title: Normalizer Functions Repository latest
 version: latest
 permalink: /normalizer-functions_latest_index.html
 toc: false

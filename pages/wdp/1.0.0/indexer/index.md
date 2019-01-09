@@ -289,7 +289,7 @@ The granularity field determines how data gets bucketed across the time dimensio
 
 ### Invervals
 
-A JSON Object representing ISO-8601 Intervals. This defines the time ranges to index data.
+A JSON Object representing [ISO-8601 Intervals](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). This defines the time ranges to index data.
 
 ### Context
 

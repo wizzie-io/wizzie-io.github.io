@@ -10,7 +10,7 @@ some basic operations with it.
 
 ### Prerequisites
 
-- A preinstalled WDP. See [deploying WDP] (wdp-cli_0.3.0_deploying_wdp.html)
+- A preinstalled WDP. See [deploying WDP](wdp-cli_0.3.0_deploying_wdp.html)
 getting started to learn how to deploy WDP. 
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) installed
 and with context configured to have admin access to this kubernetes cluster.

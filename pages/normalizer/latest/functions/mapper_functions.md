@@ -272,10 +272,10 @@ The MaxValueMapper is a function that allow us from an array of numbers which is
 }
 ```
 
-The MaxValueMapper have two properties named `dimension` and `max_dimension_name`:
+The MaxValueMapper have two properties named `dimension` and `maxDimensionName`:
 
 * `dimension`: Dimension where the numbers are located.
-* `max_dimension_name`: The dimension where to save the max value detected.
+* `maxDimensionName`: The dimension where to save the max value detected.
 
 I we have next json message:
 
@@ -312,9 +312,9 @@ The MinValueMapper is like MaxValueMapper function, except that this function lo
 }
 ```
 
-The MinValueMapper like MaxValueMapper also has two properties `dimension` and `min_dimension_name`:
+The MinValueMapper like MaxValueMapper also has two properties `dimension` and `minDimensionName`:
 * `dimension`:  Dimension where the numbers are located.
-* `min_dimension_name`: The dimension where to save the min value detected.
+* `minDimensionName`: The dimension where to save the min value detected.
 
 If we have next json message:
 
@@ -347,7 +347,7 @@ The ClassficationMapper allows us to classify a numeric value.
   "className":"io.wizzie.normalizer.funcs.impl.ClassificationMapper",
   "properties": {
     "dimension": "mark",
-    "new_dimension": "classification",
+    "newDimension": "classification",
     "classification": ["F", "D", "C", "B", "A"],
     "intervals": [49, 60, 71, 85],
     "unknownValue": -1
@@ -358,10 +358,10 @@ The ClassficationMapper allows us to classify a numeric value.
 The ClassificationMapper has five properties:
 
 * `dimension`: The dimension that indicate the numeric value to classify.
-* `new_dimension`: Dimension where put classification value.
+* `newDimension`: Dimension where put classification value.
 * `classification`: Array of strings where put the classification names.
 * `intervals`: Array of limit for each classification.
-* `unknown_value`: Single value for `unknown` classification.
+* `unknownValue`: Single value for `unknown` classification.
 
 In the function definition we are classify exams of Alberta Senior High School. We assume next message:
 
@@ -407,7 +407,7 @@ This mapper has some properties:
 * `dimension`: The dimension field that you want to split.
 * `delimiter`:  The character that the mapper uses to split.
 * `fields`: The new fields to the splitter dimensions. This is a JSON Array.
-* `delete_dimension`: This is a boolean to indicate if you want to delete the original dimension. Default: false
+* `deleteDimension`: This is a boolean to indicate if you want to delete the original dimension. Default: false
 
 **Input**:
 
@@ -440,8 +440,8 @@ The StringReplaceMapper replaces the dimension string value to another one.
 This mapper has some properties:
 
 * `dimension`: The dimension that you want to transform.
-* `target_string`: The string sequence that you want to replace.
-* `replacement_string`: The string sequence that you want to use on the change.
+* `targetString`: The string sequence that you want to replace.
+* `replacementString`: The string sequence that you want to use on the change.
 
 **Input**:
 
@@ -947,7 +947,7 @@ The ArrayDecompositionMapper has three properties:
 
  * `dimension`: The dimension that indicate the array that we want to map.
  * `dimensionToBuild`: The output dimension that the mapper generates using the dimension array.
- * `delete_dimension`: Option to delete the dimension or not.
+ * `deleteDimension`: Option to delete the dimension or not.
 
 If we have this json message:
 
@@ -1098,7 +1098,7 @@ The MapFlattenMapper is a function that allows us to transform `Map<String, Map<
   "name":"myMapFlattenMapper",
   "className":"io.wizzie.normalizer.funcs.impl.MapFlattenMapper",
   "properties": {
-    "key_dimension": "key_dim",
+    "keyDimension": "key_dim",
     "flatDimension": "data",
     "outputDimension": "array_data"
   }
@@ -1107,9 +1107,9 @@ The MapFlattenMapper is a function that allows us to transform `Map<String, Map<
 
 The MapFlattenMapper have 3 properties:
 
-* `flat_dimension`: The `Map<String, Map<String, Object>>` to transform.
-* `key_dimension`: The new key dimension name to store the key value.
-* `output_dimension`: The new output dimension to store the `Array<Map<String, Object>>`
+* `flatDimension`: The `Map<String, Map<String, Object>>` to transform.
+* `keyDimension`: The new key dimension name to store the key value.
+* `outputDimension`: The new output dimension to store the `Array<Map<String, Object>>`
 
 I we have next json message:
 

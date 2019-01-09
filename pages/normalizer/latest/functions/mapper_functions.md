@@ -272,7 +272,7 @@ The MaxValueMapper is a function that allow us from an array of numbers which is
 }
 ```
 
-The MaxValueMapper have two properties named `dimension` and `max_dimension_name`:
+The MaxValueMapper have two properties named `dimension` and `maxDimensionName`:
 
 * `dimension`: Dimension where the numbers are located.
 * `maxDimensionName`: The dimension where to save the max value detected.
@@ -312,7 +312,7 @@ The MinValueMapper is like MaxValueMapper function, except that this function lo
 }
 ```
 
-The MinValueMapper like MaxValueMapper also has two properties `dimension` and `min_dimension_name`:
+The MinValueMapper like MaxValueMapper also has two properties `dimension` and `minDimensionName`:
 * `dimension`:  Dimension where the numbers are located.
 * `minDimensionName`: The dimension where to save the min value detected.
 

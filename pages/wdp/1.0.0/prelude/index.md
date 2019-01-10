@@ -1,6 +1,6 @@
 ---
 title: Overview
-permalink: /prelude_index.html
+permalink: /wdp_1.0.0_prelude_index.html
 datatable: false
 toc: false
 ---

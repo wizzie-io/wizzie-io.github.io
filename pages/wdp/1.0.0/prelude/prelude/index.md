@@ -5,7 +5,7 @@ datatable: false
 toc: true
 ---
 
-Wizzie Prelude is a Ruby based library that simplifies the way we work with [Terra-Box](https://wizzie-io.github.io/terra-box_index.html) and WDP Plugins. Furthermore, it allows to automate and manage WDP deployments in a collaborative way by using Git behind the scenes.
+Wizzie Prelude is a Ruby based library that allows to work with [Terra-Box](https://wizzie-io.github.io/terra-box_index.html) and simplifies working with it. Furthermore, it allows to automate and manage WDP deployments in a collaborative way by using [GitOps](https://www.weave.works/blog/gitops-operations-by-pull-request) principles.
 
 ## Configuration
 
@@ -32,49 +32,11 @@ log_output: "/home/user/.wdp/prelude.log"
 
 ## Working with deploys
 
-For Prelude, a WDP is a **deploy**. You can manage as many deploys as you want. Each deploy is represented as a **Deploy** class instance. This class give us several methods to work with a WDP deploy in a easy way.
+For Prelude, a WDP is a **deploy**. You can manage as many deploys as you want.
 
 Inside the `.wdp` folder we can find the `deploys` folder where Prelude stores the configuration of all the deploys it manages.
 
 Let's see how Prelude works with deploys.
-
-### Deploys management
-
-With Prelude we can work with many deploys at the same time. All deploys are managed by **DeployManager** class. This class is responsible for managing deploys lifecycle.
-
-Inside the `.wdp/deploys/` folder we can find the `deploys.yml` file that contains a list of the current deploys and some configuration parameters of each of them. When DeployManager is instanced it reads this file and initializes all the available deploys. If we add a new deploy then DeployManager registers it in this file and initializes it.
-
-Example of a deploys.yml file:
-
-```
-deploys:
-  deploy1:
-    storage_repo: git@github.com:username/wdp-deploy1-var-states.git
-    terra_box_repo: git@github.com:wizzie-io/terra-box.git
-    k8s_context: kube-context1
-    initialized: true
-  deploy2:
-    storage_repo: git@github.com:username/wdp-deploy2-var-states.git
-    terra_box_repo: git@github.com:wizzie-io/terra-box.git
-    k8s_context: kube-context2
-    initialized: true
-  deploy3:
-    (...)
-  deploy4
-    (...)  
-```
-
-DeployManager allows to us to create a new deploy configuration, to list the existent ones or to remove one of them.
-
-To create a new deploy we need to set the following information which is saved in `deploys.yml` by DeployManager:
-
-* **storage_repo** - Git repository address of the **Storage Repo**. This repository is the place where the [Terra-Box templates](https://wizzie-io.github.io/terra-box_index.html#templates) and [Terraform state](https://www.terraform.io/docs/state) files are stored.
-
-* **terra_box_repo** - Git repository address of Terra-Box.
-
-* **k8s_context** - Kubernetes context used for deploying WDP.
-
-* **initialized** - It is a special parameter which can be "true" or "false" and indicates if the deploy was initialized or not yet. The **initialization** take place at the moment of adding a new deploy.
 
 ### Anatomy of a deploy
 
@@ -133,7 +95,7 @@ As a result, a deploy folder tree like this is created:
 
 One of the main purposes of Prelude is to abstract us of the operations with terraform and Terra-Box. This operations include the execution of terraform commands on a WDP deploy.
 
-Prelude implements a class that wraps some of the most common terraform features. You can do the following terraform actions on a deploy:
+Prelude wraps some of the most common terraform features. You can do the following terraform actions on a deploy:
 
 * init
 * plan
@@ -164,7 +126,7 @@ Using the Storage repo brings to us the following advantages:
 
 ### Vars - Working with Terra-Box templates
 
-Prelude manages the Terra-Box input variables. Each deploy creates a Vars object to work with input variables. It clones the Storage repo in the folder `.wdp/deploys/my_deploy/vars` and set the branch `vars`
+Prelude manages the Terra-Box input variables. Each deploy creates a `vars` folder to work with input variables. It clones the Storage repo in the folder `.wdp/deploys/my_deploy/vars` and set the branch `vars`
 
 Inside Vars repo you can find the following elements:
 
@@ -285,7 +247,7 @@ In this file we can find the following deploy information:
 
 A plugin is an optional extension of Terra-Box which might add new components of modify some of the existent ones (E.g: reputation, mobility). A plugin is defined in a git repository on a similar way to Terra-Box.
 
-Prelude manages the plugins of a deploy by using a class called **PluginManager**. When a plugin is added to a deploy, Prelude clones it git repository into the `plugins` folder. At the time a plugin is added to a deploy, all its global modules are added to the Working directory and its vars are added to the `vars` global folder.
+When a plugin is added to a deploy, Prelude clones it git repository into the `plugins` folder. At the time a plugin is added to a deploy, all its global modules are added to the Working directory and its vars are added to the `vars` global folder.
 
 Moreover, once a plugin is added to a deploy, it can be also added to a user component. Then, its user modules and vars are taken into account.
 

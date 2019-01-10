@@ -1,6 +1,6 @@
 ---
 title: Terra-Box
-permalink: /terra-box_index.html
+permalink: /wdp_1.0.0_terra-box_index.html
 datatable: false
 toc: true
 serviceImage: terra-box/logo.png

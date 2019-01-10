@@ -16,18 +16,18 @@ You can check them at: [Normalizer functions](http://wizzie-io.github.io/normali
 ## Development
 
 On this section, we are trying to explain how to develop your own functions.
-All the function classes implement the [Function](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/io/wizzie/ks/normalizer/funcs/Function.java) interface.
+All the function classes implement the [Function](https://github.com/wizzie-io/normalizer/blob/master/functions/src/main/java/io/wizzie/normalizer/funcs/Function.java) interface.
 
 If you want to build your own functions, you only need to implement some of the different abstract classes and add the JAR into the `lib` folder inside the normalizer distribution.
 
 ### MapperFunction
 
-The base abstract class that you need to implement your own MapperFunction is [MapperFunction class](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/io/wizzie/ks/normalizer/funcs/MapperFunction.java)
+The base abstract class that you need to implement your own MapperFunction is [MapperFunction class](https://github.com/wizzie-io/normalizer/blob/master/functions/src/main/java/io/wizzie/normalizer/funcs/MapperFunction.java)
 
 Using this class you can develop your mappers like:
- * [SimpleMapper](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/io/wizzie/ks/normalizer/funcs/impl/SimpleMapper.java)
- * [MaxValueMapper](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/io/wizzie/ks/normalizer/funcs/impl/MaxValueMapper.java)
- * [ClassificationMapper](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/io/wizzie/ks/normalizer/funcs/impl/ClassificationMapper.java)
+ * [SimpleMapper](https://github.com/wizzie-io/normalizer/blob/master/functions/src/main/java/io/wizzie/normalizer/funcs/impl/SimpleMapper.java)
+ * [MaxValueMapper](https://github.com/wizzie-io/normalizer/blob/master/functions/src/main/java/io/wizzie/normalizer/funcs/impl/MaxValueMapper.java)
+ * [ClassificationMapper](https://github.com/wizzie-io/normalizer/blob/master/functions/src/main/java/io/wizzie/normalizer/funcs/impl/ClassificationMapper.java)
  * And more!!
 
 The abstract class has one method:
@@ -42,7 +42,7 @@ On each `process` call the normalize gives you a 'key' that is a kafka message k
 
 ### FlatMapperFunction
 
-The base abstract class that you need to implement your own FlatMapperFunction is [FlatMapperFunction class](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/io/wizzie/ks/normalizer/funcs/FlatMapperFunction.java)
+The base abstract class that you need to implement your own FlatMapperFunction is [FlatMapperFunction class](https://github.com/wizzie-io/normalizer/blob/master/functions/src/main/java/io/wizzie/normalizer/funcs/FlatMapperFunction.java)
 
 The FlatMapper allows us to generate zero, one or more message from one message. The method that we need to implement is:
 
@@ -57,7 +57,7 @@ On each `process` call the normalize gives you a 'key' that is a kafka message k
 
 ### MapperStoreFunction
 
-The base abstract class that you need to implement your own MapperStoreFunction is [MapperStoreFunction class](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/io/wizzie/ks/normalizer/funcs/MapperStoreFunction.java)
+The base abstract class that you need to implement your own MapperStoreFunction is [MapperStoreFunction class](https://github.com/wizzie-io/normalizer/blob/master/functions/src/main/java/io/wizzie/normalizer/funcs/MapperStoreFunction.java)
 
 The MapperStore function has the same method that MapperFunction:
 
@@ -83,7 +83,7 @@ The message that are returned by window method are sent to kafka too.
 
 ### FilterFunction
 
-The base abstract class that you need to implement your own FilterFunction is [FilterFunction class](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/io/wizzie/ks/normalizer/funcs/FilterFunc.java)
+The base abstract class that you need to implement your own FilterFunction is [FilterFunction class](https://github.com/wizzie-io/normalizer/blob/master/functions/src/main/java/io/wizzie/normalizer/funcs/FilterFunc.java)
 
 ```java
     public Boolean process(String key, Map<String, Object> value) {

@@ -76,15 +76,15 @@ entries:
     folderitems:
 
     - title: Prelude Ecosystem
-      url: /prelude_index.html
+      url: /wdp_1.0.0_prelude_index.html
       output: web
 
     - title: Terra-Box
-      url: /terra-box_index.html
+      url: /wdp_1.0.0_terra-box_index.html
       output: web
 
     - title: Wizzie Prelude library
-      url: /wizzie_prelude_index.html
+      url: /wdp_1.0.0_wizzie_prelude_index.html
       output: web
 
   - title: Prozzie
@@ -149,7 +149,7 @@ entries:
       output: web
 
     - title: Indexer
-      url: /wdp_1.0.0_index.html
+      url: /wdp_1.0.0_indexer_index.html
       output: web
 
   - title: Manage the Stack with Batuta

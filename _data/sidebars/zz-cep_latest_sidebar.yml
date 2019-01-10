@@ -3,14 +3,14 @@
 entries:
 - title: sidebar
   product: ZZ-Cep
-  version: 0.5.1
+  version: latest
   folders:
 
   - title: Overview
     output: web
     folderitems:
-    - title: ZZ-Cep 0.5.1 Home
-      url: /zz-cep_0.5.1_index.html
+    - title: ZZ-Cep Latest Home
+      url: /zz-cep_latest_index.html
       output: web
       type: homepage
 
@@ -18,37 +18,37 @@ entries:
     output: web
     folderitems:
     - title: Base Tutorial
-      url: /zz-cep_0.5.1_base_tutorial.html
+      url: /zz-cep_latest_base_tutorial.html
       output: web
 
   - title: Configuration
     output: web
     folderitems:
     - title: Base configuration
-      url: /zz-cep_0.5.1_base_configuration.html
+      url: /zz-cep_latest_base_configuration.html
       output: web
     - title: Stream configuration
-      url: /zz-cep_0.5.1_stream_configuration.html
+      url: /zz-cep_latest_stream_configuration.html
       output: web
     - title: Bootstrapper
-      url: /zz-cep_0.5.1_bootstrapper.html
+      url: /zz-cep_latest_bootstrapper.html
       output: web
     - title: Metrics
-      url: /zz-cep_0.5.1_metrics.html
+      url: /zz-cep_latest_metrics.html
       output: web
     - title: Multi Tenant
-      url: /zz-cep_0.5.1_multi_tenant.html
+      url: /zz-cep_latest_multi_tenant.html
       output: web
     - title: Kafka Key
-      url: /zz-cep_0.5.1_kafka_key.html
+      url: /zz-cep_latest_kafka_key.html
       output: web
 
   - title: Docker
     output: web
     folderitems:
     - title: Docker Configuration
-      url: /zz-cep_0.5.1_docker_configuration.html
+      url: /zz-cep_latest_docker_configuration.html
       output: web
     - title: Docker Example
-      url: /zz-cep_0.5.1_docker_example.html
+      url: /zz-cep_latest_docker_example.html
       output: web

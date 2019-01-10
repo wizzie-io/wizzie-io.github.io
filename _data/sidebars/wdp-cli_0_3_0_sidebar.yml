@@ -17,21 +17,22 @@ entries:
   - title: Getting Started
     output: web
     folderitems:
-    - title: Installation
-      url: /wdp-cli_0.3.0_install.html
+    - title: Deploying WDP
+      url: /wdp-cli_0.3.0_deploying_wdp.html
       output: web
-    - title: Base Tutorial
-      url: /wdp-cli_0.3.0_base_tutorial.html
+    - title: Adding plugins
+      url: /wdp-cli_0.3.0_adding_plugins.html
       output: web
 
-  - title: Internals overview
-    url: /wdp-cli_0.3.0_internals.html
+  - title: Reference
     output: web
-
-  - title: Operations
-    url: /wdp-cli_0.3.0_operations.html
-    output: web
-
-  - title: Examples
-    url: /wdp-cli_0.3.0_examples.html
-    output: web
+    folderitems:
+    - title: Top Level
+      url: /wdp-cli_0.3.0_toplevel.html
+      output: web
+    - title: Config
+      url: /wdp-cli_0.3.0_config.html
+      output: web
+    - title: Deploy
+      url: /wdp-cli_0.3.0_deploy.html
+      output: web

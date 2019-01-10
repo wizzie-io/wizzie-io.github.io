@@ -1,6 +1,6 @@
 ---
 title: Wizzie Prelude
-permalink: /wizzie_prelude_index.html
+permalink: /wdp_1.0.0_wizzie_prelude_index.html
 datatable: false
 toc: false
 ---

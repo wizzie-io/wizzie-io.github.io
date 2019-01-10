@@ -51,7 +51,6 @@ The `rules` section is made by processing rules:
     "rules": [
         {
             "id": 1,
-            "version": "v1",
             "streams": {
                 "in": [
                     {
@@ -71,7 +70,6 @@ The `rules` section is made by processing rules:
         },
         {
             "id": 2,
-            "version": "v1",
             "streams": {
                 "in": [
                     {
@@ -92,10 +90,9 @@ The `rules` section is made by processing rules:
 }
 ```
 
-The rules objects are made by: `id`, `version`, `streams` and `executionPlan`
+The rules objects are made by: `id`, `streams` and `executionPlan`
 
 * `id`: The name of the rule.
-* `version`: an string that identifies the version of the rule.
 * `streams`: a map that contains the `in` and `out` relations between Siddhi and Kafka.
 * `executionPlan`: the SiddhiQL query that will be used to process this rule.
 * `options`: An optional map field to modify the rule behaviour.
@@ -149,7 +146,6 @@ So, the full stream configuration should be:
     "rules": [
         {
             "id": "1",
-            "version": "v1",
             "streams": {
                 "in": [
                     {
@@ -168,7 +164,6 @@ So, the full stream configuration should be:
         },
         {
             "id": "2",
-            "version": "v1",
             "streams": {
                 "in": [
                     {
@@ -189,7 +184,6 @@ So, the full stream configuration should be:
 }
 ```
 
-
-Important notes: you must define an stream if you use it at one rule. If you want to update and overwrite a rule, you must send the same rule with a different version. If you send
-a rule with the same version, the existing rule will not be overwritten.
+Important notes: you must define an stream if you use it at one rule. If you want to update and overwrite a rule, you must send the same rule id with a different execution plan or streams section. If you send
+a rule equals to the existing one, the existing rule will not be overwritten.
 The execution plans you can use are defined at [SiddhiQL Documentation](https://wso2.github.io/siddhi/documentation/siddhi-4.0/#query)

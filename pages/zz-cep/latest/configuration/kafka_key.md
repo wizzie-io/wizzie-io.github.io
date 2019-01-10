@@ -87,7 +87,6 @@ So, if you send the next event with the following processing definition:
   "rules": [
     {
       "id": 1,
-      "version": "v1",
       "streams": {
         "in": [
           {

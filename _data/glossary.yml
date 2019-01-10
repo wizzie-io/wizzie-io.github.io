@@ -1,0 +1,5 @@
+kafka_supervisor_simplify_spec: "JSON Payload to define stream indexing supervisors inside WDP. It is used by Batuta to create new indexing tasks."
+
+druid_rows: "Combination of different dimension values used to perform the aggregations based on metrics."
+
+batch_index_simplify_spec: "JSON Payload to define native batch indexing task inside WDP. It is used by Batuta to create new batch indexing tasks."

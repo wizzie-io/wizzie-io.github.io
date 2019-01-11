@@ -3,6 +3,7 @@ title: Normalizer Functions Mobility
 version: latest
 permalink: /normalizer-functions_latest_mobility.html
 toc: true
+serviceImage: normalizer-functions/logo.svg
 ---
 
 ### DistanceStoreMapper
@@ -131,9 +132,8 @@ The bound type `rectangle` creates a rectangle area.
   }
 }
 ```
-<div style="text-align: center">
-    <img src="{{ '/assets/images/geotagging/rectangle.svg' | relative_url }}" class="img" alt="Rectangle Type">
-</div>
+{% include image.html file="normalizer-functions/geotagging/rectangle.svg" alt="GeoTagging Rectangle" caption="Geotagging Rectangle" %}
+
 
 ##### Example
 
@@ -175,9 +175,8 @@ The bound type `radius` creates a circle area.
 }
 ```
 
-<div style="text-align: center">
-    <img src="{{ '/assets/images/geotagging/radius.svg' | relative_url }}" class="img" alt="Radius Type">
-</div>
+{% include image.html file="normalizer-functions/geotagging/radius.svg" alt="GeoTagging Radius" caption="Geotagging Radius" %}
+
 
 The distance is calculated by [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula). The Haversine formula determines the great-circle distance between two points on a sphere given their longitudes and latitudes. The minimum distance to set in radius parameter is 0.001Km.
 
@@ -221,9 +220,8 @@ The bound type `polygon` allows you create a custom area defining the points of 
 }
 ```
 
-<div style="text-align: center">
-    <img src="{{ '/assets/images/geotagging/polygon.svg' | relative_url }}" class="img" alt="Polygon Type">
-</div>
+{% include image.html file="normalizer-functions/geotagging/polygon.svg" alt="GeoTagging Polygon" caption="Geotagging Polygon" %}
+
 
 ##### Example
 
@@ -261,9 +259,8 @@ When you define multiple bounds you can do superposition to match multiple areas
 }
 ```
 
-<div style="text-align: center">
-    <img src="{{ '/assets/images/geotagging/superposition.svg' | relative_url }}" class="img" alt="Superposition Type">
-</div>
+{% include image.html file="normalizer-functions/geotagging/superposition.svg" alt="GeoTagging Superposition" caption="Geotagging Superposition" %}
+
 
 
 ##### Example

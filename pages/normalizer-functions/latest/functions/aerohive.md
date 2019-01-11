@@ -3,6 +3,7 @@ title: Normalizer Functions Aerohive
 version: latest
 permalink: /normalizer-functions_latest_aerohive.html
 toc: true
+serviceImage: normalizer-functions/logo.svg
 ---
 
 ### AerohiveApSelector

@@ -3,6 +3,7 @@ title: Normalizer Functions Networking
 version: latest
 permalink: /normalizer-functions_latest_networking.html
 toc: true
+serviceImage: normalizer-functions/logo.svg
 ---
 
 ### NetMapper

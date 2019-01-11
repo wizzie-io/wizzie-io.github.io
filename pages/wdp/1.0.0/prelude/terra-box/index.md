@@ -6,7 +6,7 @@ toc: true
 serviceImage: terra-box/logo.png
 ---
 
-Terra-Box is a [HCL](https://github.com/hashicorp/hcl) based project that defines the full WDP infrastructure for deploying it on Kubernetes.
+Terra-Box is a [HCL](https://github.com/hashicorp/hcl){:target="_blank"} based project that defines the full WDP infrastructure for deploying it on Kubernetes.
 
 This page describes how the project is organized and explains a few of concepts that you should understand to work with WDP deployments.
 
@@ -26,9 +26,9 @@ This is the place where the WDP components are defined. Each component definitio
 
 For instance, Wizz-Vis is a WDP component defined in `modules`. It has two Terraform files:
 
-* `main.tf` where the kubernetes resources which deploys Wizz-Vis are defined. This module creates several kubernetes [deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment), a [service](https://kubernetes.io/docs/concepts/services-networking/service/) and a [secret](https://kubernetes.io/docs/concepts/configuration/secret).
+* `main.tf` where the kubernetes resources which deploys Wizz-Vis are defined. This module creates several kubernetes [deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment){:target="_blank"}, a [service](https://kubernetes.io/docs/concepts/services-networking/service/){:target="_blank"} and a [secret](https://kubernetes.io/docs/concepts/configuration/secret){:target="_blank"}.
 
-* `vars.tf` where the module [Input Variables](https://learn.hashicorp.com/terraform/getting-started/variables) (commonly simply called as **vars**) are declared. Module vars let us to parametrize configuration details of the component. E.g.: The admin user password.
+* `vars.tf` where the module [Input Variables](https://learn.hashicorp.com/terraform/getting-started/variables){:target="_blank"} (commonly simply called as **vars**) are declared. Module vars let us to parametrize configuration details of the component. E.g.: The admin user password.
 
 ### main {#mainmodules}
 
@@ -94,4 +94,4 @@ In order to deploy a complete WDP we need to process all the involved components
 
 {% include image.html file="terra-box/Terra-BoxProcess.png" alt="Terra-Box Process" max-width=500 %}
 
-However, as we have seen, main modules and templates are not centralize. Thus, to apply `terraform` commands, a pre-processing is needed. This processing is made by [Prelude](https://wizzie-io.github.io/wizzie_prelude_index.html).
+However, as we have seen, main modules and templates are not centralize. Thus, to apply `terraform` commands, a pre-processing is needed. This processing is made by [Prelude](wdp_1.0.0_wizzie_prelude_index.html).

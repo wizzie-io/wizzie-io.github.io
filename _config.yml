@@ -189,8 +189,24 @@ sidebars:
 - wdp-cli_0.3.0_sidebar
 - normalizer_latest_sidebar
 
-description: "WDP Project Website"
-# the description is used in the feed.xml file
+# SEO and Social config
+google_site_verification: 8G13iLMreJldVEWLkrZnzCNNoa4ywsYfzAoPydBJgPo
+
+title: WDP Project Documentation
+description: WDP Project Documentation
+url: https://wizzie-io.github.io
+
+twitter:
+  username: wizzieio
+  card: summary
+
+social:
+  name: Wizzie
+  links:
+    - https://twitter.com/wizzieio
+    - https://www.linkedin.com/company/wizzie
+    - https://github.com/wizzie-io
+
 
 # needed for sitemap.xml file only
 # url: http://idratherbewriting.com

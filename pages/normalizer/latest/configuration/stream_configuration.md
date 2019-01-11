@@ -297,5 +297,5 @@ The function does not care about file names. It takes the sections defined at al
 
 
 ## Other Notes
-* If you build an invalid plan, the [PlanBuilderException](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/zz/ks/exceptions/PlanBuilderException.java) will be throw.
-* You can't do loop on the stream topology, if you define a loop the [TryToDoLoopException](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/zz/ks/exceptions/TryToDoLoopException.java) will be throw.
+* If you build an invalid plan, the [PlanBuilderException](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/zz/ks/exceptions/PlanBuilderException.java){:target="_blank"} will be throw.
+* You can't do loop on the stream topology, if you define a loop the [TryToDoLoopException](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/zz/ks/exceptions/TryToDoLoopException.java){:target="_blank"} will be throw.

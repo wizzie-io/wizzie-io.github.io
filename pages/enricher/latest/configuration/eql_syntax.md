@@ -6,7 +6,7 @@ toc: true
 serviceImage: enricher/logo.svg
 ---
 
-*Enrichment Query Language* (EQL) is a query language generated with [ANTLR](https://www.antlr.org/) that allows us define that streams and fields to use and join. Before we look into details of the EQL, let's take a look at a few definitions of terms.
+*Enrichment Query Language* (EQL) is a query language generated with [ANTLR](https://www.antlr.org/){:target="_blank"} that allows us define that streams and fields to use and join. Before we look into details of the EQL, let's take a look at a few definitions of terms.
 
 |Term|Definition|
 |----------|----------|
@@ -38,7 +38,7 @@ Where:
 
 #### GLOBAL TABLE
 
-The `FROM GLOBAL TABLE` clause allows us use a stream as [Kafka Stream GlobalKTable](https://docs.confluent.io/current/streams/concepts.html#globalktable).
+The `FROM GLOBAL TABLE` clause allows us use a stream as [Kafka Stream GlobalKTable](https://docs.confluent.io/current/streams/concepts.html#globalktable){:target="_blank"}.
 
 #### Optional PARTITION BY
 

@@ -29,7 +29,7 @@ First, start a zookeeper container by executing:
 $ docker run --rm --name zookeeper-svc --net=host wurstmeister/zookeeper
 ```
 
-You can found more information about `wurstmeister/zookeeper` image [here](https://hub.docker.com/r/wurstmeister/zookeeper)
+You can found more information about `wurstmeister/zookeeper` image [here](https://hub.docker.com/r/wurstmeister/zookeeper){:target="_blank"}
 
 ##### Kafka
 
@@ -38,7 +38,7 @@ Now, start a kafka broker container by executing:
 ```
 $ docker run --rm --name kafka-broker --net=host -e KAFKA_ADVERTISED_HOST_NAME=localhost -e KAFKA_ADVERTISED_PORT=9092 wurstmeister/kafka:0.10.2.1
 ```
-You can found more information about `wurstmeister/kafka` image [here](https://hub.docker.com/r/wurstmeister/kafka)
+You can found more information about `wurstmeister/kafka` image [here](https://hub.docker.com/r/wurstmeister/kafka){:target="_blank"}
 
 ##### Start Normalizer
 

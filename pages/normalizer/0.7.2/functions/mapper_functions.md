@@ -484,7 +484,7 @@ This mapper has some properties:
 
 Both `fromFormat` and `toFormat` must be: "ISO", "millis", "secs" or "pattern: ...".
 
-If you choose "pattern: ..." as fromFormat or toFormat you have to specify a valid format. A valid format is a JDK date format (you can read more at: [Formats](https://docs.oracle.com/javase/tutorial/i18n/format/simpleDateFormat.html) and at JDK docs).
+If you choose "pattern: ..." as fromFormat or toFormat you have to specify a valid format. A valid format is a JDK date format (you can read more at: [Formats](https://docs.oracle.com/javase/tutorial/i18n/format/simpleDateFormat.html){:target="_blank"} and at JDK docs).
 
 ##### Example 1: millis -> secs
 
@@ -830,7 +830,7 @@ This function supports long, integer and double for input formats and it outputs
 
 ##### Supported operations and library used
 
-The library used for doing arithmetic operations is: [parsii](https://github.com/scireum/parsii) .
+The library used for doing arithmetic operations is: [parsii](https://github.com/scireum/parsii){:target="_blank"} .
 You can check the supported operations inspecting the java classes of this project.
 
 Some of the operations supported are:

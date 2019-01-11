@@ -6,7 +6,7 @@ toc: false
 serviceImage: normalizer/logo.svg
 ---
 
-Normalizer uses [Kafka Stream](https://kafka.apache.org/documentation/streams/) to build the topology path of normalizer's streams. Kafka Streams allows us to implement and create functions, filters, and sinks to handle the data information.
+Normalizer uses [Kafka Stream](https://kafka.apache.org/documentation/streams/){:target="_blank"} to build the topology path of normalizer's streams. Kafka Streams allows us to implement and create functions, filters, and sinks to handle the data information.
 
 For example, if you send the next stream to normalizer:
 

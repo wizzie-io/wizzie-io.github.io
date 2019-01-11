@@ -186,4 +186,4 @@ So, the full stream configuration should be:
 
 Important notes: you must define an stream if you use it at one rule. If you want to update and overwrite a rule, you must send the same rule id with a different execution plan or streams section. If you send
 a rule equals to the existing one, the existing rule will not be overwritten.
-The execution plans you can use are defined at [SiddhiQL Documentation](https://wso2.github.io/siddhi/documentation/siddhi-4.0/#query)
+The execution plans you can use are defined at [SiddhiQL Documentation](https://wso2.github.io/siddhi/documentation/siddhi-4.0/#query){:target="_blank"}

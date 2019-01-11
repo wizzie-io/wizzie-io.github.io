@@ -10,7 +10,7 @@ The flat mapper functions transforms stream one message to zero or many messages
 
 ###  JqFlatMapper 
 
-The JqFlatMapper is a special mapper that allows us to use [Jq Syntax](https://stedolan.github.io/jq/), internally the mapper uses [eiiches/jackson-jq](https://github.com/eiiches/jackson-jq) library to build the jq query.
+The JqFlatMapper is a special mapper that allows us to use [Jq Syntax](https://stedolan.github.io/jq/){:target="_blank"}, internally the mapper uses [eiiches/jackson-jq](https://github.com/eiiches/jackson-jq){:target="_blank"} library to build the jq query.
 
 ```json
 {

@@ -9,7 +9,7 @@ serviceImage: normalizer-functions/logo.svg
 ### DistanceStoreMapper
 
 This function calculates distance and speed from latitude and longitude points. It stores the last event received data in a cache in order to calculate these values.
-This is a function of StoreMapper type. More info at: [StoreMapper](https://wizzie.io/normalizer/funcs/store-mapper-functions.html)
+This is a function of StoreMapper type. More info at: [StoreMapper](https://wizzie.io/normalizer/funcs/store-mapper-functions.html){:target="_blank"}
 
 The Store Mappers are the same way to work that the Mappers 1 event to 1 event, but on this case the Store Mappers have a cache on you can compute value based on a previous events. You must add a store to the function using the key stores, this key is a JSON Array with the store name.
 
@@ -178,7 +178,7 @@ The bound type `radius` creates a circle area.
 {% include image.html file="normalizer-functions/geotagging/radius.svg" alt="GeoTagging Radius" caption="Geotagging Radius" %}
 
 
-The distance is calculated by [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula). The Haversine formula determines the great-circle distance between two points on a sphere given their longitudes and latitudes. The minimum distance to set in radius parameter is 0.001Km.
+The distance is calculated by [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula){:target="_blank"}. The Haversine formula determines the great-circle distance between two points on a sphere given their longitudes and latitudes. The minimum distance to set in radius parameter is 0.001Km.
 
 ##### Example
 

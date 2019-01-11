@@ -36,4 +36,4 @@ Example configuration file:
 | `metric.enable`      | Enable metrics system.      | false |
 | `max.kafka.output.topics` | Max number of kafka topics that the normalizer can create to send data using the stream config | Integer.MAX_VALUE |
 
-**Note:** If you want to configure specific [Kafka Streams properties](http://kafka.apache.org/documentation#streamsconfigs), you can add these properties to this config file. The properties `key.serde` and `value.serde` will be overrwritten by normalizer.
+**Note:** If you want to configure specific [Kafka Streams properties](http://kafka.apache.org/documentation#streamsconfigs){:target="_blank"}, you can add these properties to this config file. The properties `key.serde` and `value.serde` will be overrwritten by normalizer.

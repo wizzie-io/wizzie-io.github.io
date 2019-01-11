@@ -9,4 +9,4 @@ This site is a normalizer functions repository to extend the [Wizzie Normalizer]
 
 Normalizer functions repository is used by:
 
-* **[Wizzie Data Platform: WDP](https://wizzie.io/what-is-wizzie/#platform)**
+* **[Wizzie Data Platform: WDP](https://wizzie.io/what-is-wizzie/#platform){:target="_blank"}**

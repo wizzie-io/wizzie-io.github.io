@@ -8,10 +8,10 @@ serviceImage: enricher/logo.svg
 
 We are going to follow the [Base tutorial](/enricher_{{page.version}}_base_tutorial.html) but using docker and docker-compose.
 
-Make sure you have Docker installed properly before following any of the steps below. Visit the [official Docker site](https://www.docker.com) for further instructions on the installation of Docker.
+Make sure you have Docker installed properly before following any of the steps below. Visit the [official Docker site](https://www.docker.com){:target="_blank"} for further instructions on the installation of Docker.
 {: .notice--info}
 
-To do this example you need a kafka broker and a zookeeper server, you can use the next [docker componse](https://docs.docker.com/compose/) file to run both:
+To do this example you need a kafka broker and a zookeeper server, you can use the next [docker componse](https://docs.docker.com/compose/){:target="_blank"} file to run both:
 
 ```docker
 version: '3.6'

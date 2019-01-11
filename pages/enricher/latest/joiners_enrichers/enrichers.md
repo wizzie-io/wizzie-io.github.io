@@ -74,7 +74,7 @@ This enricher processes a message and returns the defined static fields.
 ```
 
 ### GeoIpEnrich
-The GeoIpEnrich allows us enrich streams with information about IP location, internally the enricher uses MaxMind [databases](https://dev.maxmind.com/geoip/geoip2/geolite2/) in order to determine the IP information.
+The GeoIpEnrich allows us enrich streams with information about IP location, internally the enricher uses MaxMind [databases](https://dev.maxmind.com/geoip/geoip2/geolite2/){:target="_blank"} in order to determine the IP information.
 
 ```json
 {

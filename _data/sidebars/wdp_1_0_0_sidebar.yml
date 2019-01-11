@@ -71,7 +71,7 @@ entries:
       url: /wdp_1.0.0_index.html
       output: web
 
-  - title: Deploying WDP
+  - title: WDP Deploy Internals
     output: web
     folderitems:
 

@@ -5,6 +5,8 @@ version: 0.11.0
 toc: false
 ---
 
+{% include image.html file="wizz-vis/logo.svg" alt="Wizz-Vis" %}
+
 Analytics platform for time series metrics using Druid. Create dashboards and share with other users.
 
 Wizz-Vis is the web inteface used by Wizzie Data Platform (WDP).

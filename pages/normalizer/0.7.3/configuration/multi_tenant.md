@@ -3,6 +3,7 @@ title: Normalizer Multi-Tenant
 version: 0.7.3
 permalink: /normalizer_0.7.3_multi_tenant.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
 The Normalize service has a multi tenant mode, on this mode it prefix the `application.id` automatically on all the Kafka topic, except the bootstrapper and metric topic.

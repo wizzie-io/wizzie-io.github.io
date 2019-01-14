@@ -66,7 +66,7 @@ entries:
       url: /normalizer_0.7.2_debug_functions.html
       output: web
     - title: Functions Repository
-      url: https://wizzie-io.github.io/normalizer-functions/
+      url: /normalizer-functions_latest_index.html
       output: web
 
   - title: Docker

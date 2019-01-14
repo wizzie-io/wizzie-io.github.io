@@ -3,6 +3,7 @@ title: Enricher latest
 version: latest
 permalink: /enricher_latest_bootstrapper.html
 toc: true
+serviceImage: enricher/logo.svg
 ---
 
 The bootstrapper is the mechanism that is used to load stream config into enricher. You can configure the boostrapper class on the config file, using `bootstrapper.classname` property. Currently, the enricher has two bootstrappers:
@@ -28,7 +29,7 @@ This bootstrapper read the stream config from Kafka, so you can change the strea
 
 The StreamerKafkaConfig tool allows us to send new stream config to the enricher and read the current stream config.
 
-You can use the script [streamer-kafka.sh](https://github.com/wizzie-io/enricher/blob/master/bin/streamer-kafka.sh) to use this tool. The tool has two modes:
+You can use the script [streamer-kafka.sh](https://github.com/wizzie-io/enricher/blob/master/bin/streamer-kafka.sh){:target="_blank"} to use this tool. The tool has two modes:
 
 ###### Read Mode
 

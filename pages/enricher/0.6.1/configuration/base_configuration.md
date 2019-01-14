@@ -3,6 +3,7 @@ title: Enricher 0.6.1
 version: 0.6.1
 permalink: /enricher_0.6.1_base_configuration.html
 toc: false
+serviceImage: enricher/logo.svg
 ---
 
 The configuration file is a JSON format file where you specify the general properties to configure the enricher instance. This file is different from stream config file that define the KS topology.
@@ -31,12 +32,12 @@ Example configuration file:
 | `num.stream.threads`      | The number of threads to execute stream processing.      | 1 |
 | `bootstrapper.classname`      | The bootstrapper class reference. More info: [Bootstrapper](/enricher_{{page.version}}_bootstrapper.html)       | - |
 | `metric.enable`      | Enable metrics system.      | false |
-| `metric.listeners`      | Array with metrics listeners. More info: [Metrics](https://github.com/wizzie-io/metrics-library/tree/master/src/main/java/io/wizzie/metrics/listeners)      | ["io.wizzie.metrics. listeners.ConsoleMetricListener"] |
+| `metric.listeners`      | Array with metrics listeners. More info: [Metrics](https://github.com/wizzie-io/metrics-library/tree/master/src/main/java/io/wizzie/metrics/listeners){:target="_blank"}      | ["io.wizzie.metrics. listeners.ConsoleMetricListener"] |
 | `metric.interval`      | Metric report interval (milliseconds)      |  60000 |
-| `multi.id`      | This property is used when you have multiple enricher instances with different `application.id` and the enricher uses the same topic names. More Info [Multi Tenant](/enricher_{{page.version}}_multi_tenanthtml)      |  false |
+| `multi.id`      | This property is used when you have multiple enricher instances with different `application.id` and the enricher uses the same topic names. More Info [Multi Tenant](/enricher_{{page.version}}_multi_tenant.html)      |  false |
 | `metric.enable`      | Enable metrics system.      | false |
 | `global.topics`      | This property is used to not prefix application.id to both streams and tables to the topics at this list. More info [Multi Tenant](/enricher_{{page.version}}_multi_tenant.html).   | Empty list. |
 | `bypass.null.keys`      | This property is used to use a random key for incoming messages with null key. This may be useful when you want a message with null key bypass a join.  | false |
 
-**Note:** If you want to configure specific [Kafka Streams properties](http://kafka.apache.org/documentation#streamsconfigs), you can add these properties to this config file. The properties `key.serde` and `value.serde` will be overwritten by enricher. 
+**Note:** If you want to configure specific [Kafka Streams properties](http://kafka.apache.org/documentation#streamsconfigs){:target="_blank"}, you can add these properties to this config file. The properties `key.serde` and `value.serde` will be overwritten by enricher. 
 {: .notice--info}

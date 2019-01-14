@@ -4,6 +4,7 @@ entries:
 - title: sidebar
   product: ZZ-Cep
   version: 0.5.1
+  wdpVersion: 1.0.0
   folders:
 
   - title: Overview

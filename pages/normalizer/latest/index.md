@@ -32,8 +32,8 @@ Some of its abilities are:
 
 Normalizer is the one of the components of Wizzie Workflow used by:
 
-* **[Wizzie Data Platform: WDP](https://wizzie.io/what-is-wizzie/#platform)**
-* **[Wizzie Community Stack: WCS](https://github.com/wizzie-io/community-stack)**
+* **[Wizzie Data Platform: WDP](https://wizzie.io/what-is-wizzie/#platform){:target="_blank"}**
+* **[Wizzie Community Stack: WCS](https://github.com/wizzie-io/community-stack){:target="_blank"}**
 
 ## Contribute
 If you have any idea for an improvement or found a bug, please open an issue. But, if you prefer, you can clone this repo and submit a pull request, helping us make Normalizer a better product.

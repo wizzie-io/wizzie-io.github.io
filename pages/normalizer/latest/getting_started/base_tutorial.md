@@ -3,9 +3,10 @@ title: Normalizer Base Tutorial
 version: latest
 permalink: /normalizer_latest_base_tutorial.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
-On this page, we can try a stream example using a real Kafka cluster and the normalizer jar artifact. We are going to suppose that you have built the normalizer distribution how we explain on the [Building](https://github.com/wizzie-io/normalizer#compiling-sources) section.
+On this page, we can try a stream example using a real Kafka cluster and the normalizer jar artifact. We are going to suppose that you have built the normalizer distribution how we explain on the [Building](https://github.com/wizzie-io/normalizer#compiling-sources){:target="_blank"} section.
 
 ### Explication
 First of all, we need define a stream for launch a normalizer application.

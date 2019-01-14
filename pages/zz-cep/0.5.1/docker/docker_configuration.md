@@ -3,6 +3,7 @@ title: ZZ-Cep 0.5.1
 version: 0.5.1
 permalink: /zz-cep_0.5.1_docker_configuration.html
 toc: true
+serviceImage: zz-cep/logo.svg
 ---
 
 ## How to get CEP image
@@ -24,7 +25,7 @@ First, start a zookeeper container by executing:
 $ docker run --rm --name zookeeper-svc --net=host wurstmeister/zookeeper
 ```
 
-You can found more information about `wurstmeister/zookeeper` image [here](https://hub.docker.com/r/wurstmeister/zookeeper)
+You can found more information about `wurstmeister/zookeeper` image [here](https://hub.docker.com/r/wurstmeister/zookeeper){:target="_blank"}
 
 #### Kafka
 Now, start a kafka broker container by executing:
@@ -32,7 +33,7 @@ Now, start a kafka broker container by executing:
 ```
 $ docker run --rm --name kafka-broker --net=host -e KAFKA_ADVERTISED_HOST_NAME=localhost -e KAFKA_ZOOKEEPER_CONNECT=localhost:2181 -e KAFKA_ADVERTISED_PORT=9092 wurstmeister/kafka:0.10.2.1
 ```
-You can found more information about `wurstmeister/kafka` image [here](https://hub.docker.com/r/wurstmeister/kafka)
+You can found more information about `wurstmeister/kafka` image [here](https://hub.docker.com/r/wurstmeister/kafka){:target="_blank"}
 
 #### Start Cep
 
@@ -41,7 +42,7 @@ Once kafka broker is up, we can start a Cep container and link it to the kafka b
 ```
 $ docker run --rm --name my-cep --net=host -e APPLICATION_ID=my-cep-app -e KAFKA_BOOTSTRAP_SERVER=localhost:9092 wizzieio/zz-cep:latest
 ```
-Now you can follow the [base tutorial](/normalizer_{{page.version}}_base_tutorial.html) to test Cep!
+Now you can follow the [base tutorial](/zz-cep_{{page.version}}_base_tutorial.html) to test Cep!
 
 ### Using environment variables in cep configuration
 

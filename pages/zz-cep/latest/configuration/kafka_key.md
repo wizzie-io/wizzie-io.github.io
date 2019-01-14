@@ -3,6 +3,7 @@ title: ZZ-Cep latest
 version: latest
 permalink: /zz-cep_latest_kafka_key.html
 toc: true
+serviceImage: zz-cep/logo.svg
 ---
 
 
@@ -86,7 +87,6 @@ So, if you send the next event with the following processing definition:
   "rules": [
     {
       "id": 1,
-      "version": "v1",
       "streams": {
         "in": [
           {

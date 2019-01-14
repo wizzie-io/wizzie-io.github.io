@@ -3,6 +3,7 @@ title: ZZ-Cep 0.5.1
 version: 0.5.1
 permalink: /zz-cep_0.5.1_stream_configuration.html
 toc: true
+serviceImage: zz-cep/logo.svg
 ---
 
 The stream configuration is the execution plan of the cep. Cep uses the stream configuration to build the Siddhi processing model using Kafka. You can configure how the cep gets the stream conf to do it you need to use the [Bootstrappers](/zz-cep_{{page.version}}_bootstrapper.html).
@@ -191,4 +192,4 @@ So, the full stream configuration should be:
 
 Important notes: you must define an stream if you use it at one rule. If you want to update and overwrite a rule, you must send the same rule with a different version. If you send
 a rule with the same version, the existing rule will not be overwritten.
-The execution plans you can use are defined at [SiddhiQL Documentation](https://wso2.github.io/siddhi/documentation/siddhi-4.0/#query)
+The execution plans you can use are defined at [SiddhiQL Documentation](https://wso2.github.io/siddhi/documentation/siddhi-4.0/#query){:target="_blank"}

@@ -3,6 +3,7 @@ title: Normalizer Filter Functions
 version: 0.7.2
 permalink: /normalizer_0.7.2_filter_functions.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
 The filter functions are used to filter out messages from the stream.

@@ -3,9 +3,10 @@ title: ZZ-Cep latest
 version: latest
 permalink: /zz-cep_latest_metrics.html
 toc: true
+serviceImage: zz-cep/logo.svg
 ---
 
-The ZZ-CEP service uses the [Wizzie Metrics Library](https://github.com/wizzie-io/metrics-library) to build his metrics, by default it sends JVM metrics but you can register new metrics that will be exported too.
+The ZZ-CEP service uses the [Wizzie Metrics Library](https://github.com/wizzie-io/metrics-library){:target="_blank"} to build his metrics, by default it sends JVM metrics but you can register new metrics that will be exported too.
 
 ## Properties
 
@@ -40,4 +41,4 @@ This listener `io.wizzie.metrics.KafkaMetricListener` send the transform the met
 The `metric.kafka.topic` used by default is `__cep_metrics`
 
 ### Custom Listeners
-You can made new listeners to do this you need to implement the [MetricListener Class](https://github.com/wizzie-io/metrics-library/blob/master/src/main/java/io/wizzie/metrics/listeners/MetricListener.java).
+You can made new listeners to do this you need to implement the [MetricListener Class](https://github.com/wizzie-io/metrics-library/blob/master/src/main/java/io/wizzie/metrics/listeners/MetricListener.java){:target="_blank"}.

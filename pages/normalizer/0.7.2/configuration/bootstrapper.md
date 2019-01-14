@@ -3,12 +3,13 @@ title: Normalizer Bootstrapper
 version: 0.7.2
 permalink: /normalizer_0.7.2_bootstrapper.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
 The bootstrapper is the mechanism that is used to load stream config into normalizer. You can configure the boostrapper class on the config file, using `bootstrapper.classname` property. Currently, the normalizer has two bootstrappers:
 
-* [FileBootstrapper](https://wizzie-io.github.io/normalizer/bootstrapper/file-boostrapper.html)
-* [KafkaBootstrapper](https://wizzie-io.github.io/normalizer/bootstrapper/kafka-boostrapper.html)
+* [FileBootstrapper](/normalizer_{{page.version}}_bootstrapper.html#filebootstrapper)
+* [KafkaBootstrapper](/normalizer_{{page.version}}_bootstrapper.html#kafkabootstrapper)
 
 ## Bootstrappers
 
@@ -28,7 +29,7 @@ This bootstrapper read the stream config from Kafka, so you can change the strea
 
 The StreamerKafkaConfig tool allows us to send new stream config to the normalizer and read the current stream config.
 
-You can use the script [streamer-kafka.sh](https://github.com/wizzie-io/normalizer/blob/master/bin/streamer-kafka.sh) to use this tool. The tool has two modes:
+You can use the script [streamer-kafka.sh](https://github.com/wizzie-io/normalizer/blob/master/bin/streamer-kafka.sh){:target="_blank"} to use this tool. The tool has two modes:
 
 ###### Read Mode
 
@@ -57,4 +58,4 @@ This bootstrapper read the stream config from local file system, and build a KS 
 | `file.bootstrapper.path`      | Stream config file path      |
 
 
-Library: [config-bootstrapper](https://github.com/wizzie-io/config-bootstrapper)
+Library: [config-bootstrapper](https://github.com/wizzie-io/config-bootstrapper){:target="_blank"}

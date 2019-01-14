@@ -3,6 +3,7 @@ title: Enricher 0.6.1
 version: 0.6.1
 permalink: /enricher_0.6.1_base_tutorial.html
 toc: true
+serviceImage: enricher/logo.svg
 ---
 
 On this page, we can to try an enrichment stream example using a real Kafka cluster and the enricher jar artifact. We are going to suppose that you have built the enricher distribution how we explain on the [Building](https://github.com/wizzie-io/enricher#compiling-sources) section or you are using [enricher docker](https://hub.docker.com/r/wizzieio/enricher/).

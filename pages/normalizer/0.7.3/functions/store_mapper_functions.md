@@ -3,6 +3,7 @@ title: Normalizer Store Mapper Functions
 version: 0.7.3
 permalink: /normalizer_0.7.3_store_mapper_functions.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
 The Store Mappers are the same way to work that the Mappers `1 event to 1 event`, but on this case the Store Mappers have a cache on you can compute value based on a previous events.

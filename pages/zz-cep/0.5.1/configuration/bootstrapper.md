@@ -3,6 +3,7 @@ title: ZZ-Cep 0.5.1
 version: 0.5.1
 permalink: /zz-cep_0.5.1_bootstrapper.html
 toc: true
+serviceImage: zz-cep/logo.svg
 ---
 
 The bootstrapper is the mechanism that is used to load stream config into cep. You can configure the boostrapper class on the config file, using `bootstrapper.classname` property. Currently, the cep has two bootstrappers:
@@ -25,7 +26,7 @@ This bootstrapper read the stream config from Kafka, so you can change the strea
 
 The StreamerKafkaConfig tool allow us to send new stream config to the cep and read the current stream config.
 
-You can use the script [streamer-kafka.sh](https://github.com/wizzie-io/zz-cep/blob/master/bin/streamer-kafka.sh) to use this tool. The tool has two modes:
+You can use the script [streamer-kafka.sh](https://github.com/wizzie-io/zz-cep/blob/master/bin/streamer-kafka.sh){:target="_blank"} to use this tool. The tool has two modes:
 
 #### Read Mode
 
@@ -44,7 +45,7 @@ bin/streamer-kafka.sh $BOOTSTRAP_KAFKA_SERVER $APPLICATION_ID $STREAM_CONFIG_FIL
 ```
 
 
-Library:  [Bootstrapper](https://github.com/wizzie-io/config-bootstrapper)
+Library:  [Bootstrapper](https://github.com/wizzie-io/config-bootstrapper){:target="_blank"}
 
 ### File Bootstrapper
 
@@ -56,4 +57,4 @@ This bootstrapper read the stream config from local file system, and build a KS 
 | :------------- | :-------------  |
 | `file.bootstrapper.path`      | Stream config file path      |
 
-Library:  [Bootstrapper](https://github.com/wizzie-io/config-bootstrapper)
+Library:  [Bootstrapper](https://github.com/wizzie-io/config-bootstrapper){:target="_blank"}

@@ -3,6 +3,7 @@ title: Normalizer Filter Functions
 version: latest
 permalink: /normalizer_latest_filter_functions.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
 The filter functions are used to filter out messages from the stream.

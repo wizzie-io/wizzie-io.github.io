@@ -5,7 +5,7 @@ datatable: false
 toc: true
 ---
 
-Wizzie Prelude is a Ruby based library that allows to work with [Terra-Box](https://wizzie-io.github.io/terra-box_index.html) and simplifies working with it. Furthermore, it allows to automate and manage WDP deployments in a collaborative way by using [GitOps](https://www.weave.works/blog/gitops-operations-by-pull-request) principles.
+Wizzie Prelude is a Ruby based library that allows to work with [Terra-Box](wdp_1.0.0_terra-box_index.html) and simplifies working with it. Furthermore, it allows to automate and manage WDP deployments in a collaborative way by using [GitOps](https://www.weave.works/blog/gitops-operations-by-pull-request){:target="_blank"} principles.
 
 ## Configuration
 
@@ -61,9 +61,9 @@ A deploy is composed by the following elements:
 
 * **Terra-Box**: Terra-Box git repository that is cloned in the local system.
 
-* **Vars**: Git repository where [Terra-Box templates](https://wizzie-io.github.io/terra-box_index.html#templates) are stored. It is a clone of the branch **vars** of the **Storage repo**.
+* **Vars**: Git repository where [Terra-Box templates](wdp_1.0.0_terra-box_index.html#templates) are stored. It is a clone of the branch **vars** of the **Storage repo**.
 
-* **State**: Git repository where the [state](https://www.terraform.io/docs/state) (.tfstate file) of the deploy is saved after any Terraform operation. It is a clone of the branch **state** of the **Storage repo**.
+* **State**: Git repository where the [state](https://www.terraform.io/docs/state){:target="_blank"} (.tfstate file) of the deploy is saved after any Terraform operation. It is a clone of the branch **state** of the **Storage repo**.
 
 * **Plugins**: Folder in which Prelude stores all plugins added to the deploy.
 
@@ -132,7 +132,7 @@ Inside Vars repo you can find the following elements:
 
 - **global folder**: It contains several Terra-Box templates (tfvars files) of global components input vars, including config vars, flavour vars and static vars.
 
-- **user folder**: WDP is a multi-tenant platform. Then, it could have replicated components for different users with different configurations (e.g: [normalizer](https://wizzie-io.github.io/normalizer), [enricher](https://wizzie-io.github.io/enricher) and [cep](https://wizzie-io.github.io/zz-cep)). Each user component is separately managed inside this folder and has it owns Terra-Box vars files (user/user1/\*.tfvars, user/user2/\*.tfvars, ...).
+- **user folder**: WDP is a multi-tenant platform. Then, it could have replicated components for different users with different configurations (e.g: [normalizer](normalizer_0.7.3_index.html), [enricher](enricher_0.6.1_index.html) and [cep](zz-cep_0.5.1_index.html)). Each user component is separately managed inside this folder and has it owns Terra-Box vars files (user/user1/\*.tfvars, user/user2/\*.tfvars, ...).
 
 - **metadata.yml**: Deploy settings. E.g: WDP version, platform, flavour, available user components or enabled plugins. Prelude uses this information to get the appropriate Terra-Box templates and to offer methods to work with them.
 

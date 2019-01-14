@@ -3,6 +3,7 @@ title: Enricher latest
 version: latest
 permalink: /enricher_latest_scalability.html
 toc: false
+serviceImage: enricher/logo.svg
 ---
 
 

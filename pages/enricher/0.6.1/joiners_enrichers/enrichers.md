@@ -3,6 +3,7 @@ title: Enricher 0.6.1
 version: 0.6.1
 permalink: /enricher_0.6.1_enrichers.html
 toc: true
+serviceImage: enricher/logo.svg
 ---
 
 The Base Enrich is a simple enricher that complements the information of received messages.
@@ -73,7 +74,7 @@ This enricher processes a message and returns the defined static fields.
 ```
 
 ### GeoIpEnrich
-The GeoIpEnrich allows us enrich streams with information about IP location, internally the enricher uses MaxMind [databases](https://dev.maxmind.com/geoip/geoip2/geolite2/) in order to determine the IP information.
+The GeoIpEnrich allows us enrich streams with information about IP location, internally the enricher uses MaxMind [databases](https://dev.maxmind.com/geoip/geoip2/geolite2/){:target="_blank"} in order to determine the IP information.
 
 ```json
 {

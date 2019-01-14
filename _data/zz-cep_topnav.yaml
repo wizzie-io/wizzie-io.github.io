@@ -16,7 +16,7 @@ topnav_dropdowns:
           url: /index.html
     - title: ZZ-Cep Versions
       folderitems:
-        - title: ZZ-Cep Latest
+        - title: ZZ-Cep latest
           url: /zz-cep_latest_index.html
         - title: ZZ-Cep 0.5.1
           url: /zz-cep_0.5.1_index.html

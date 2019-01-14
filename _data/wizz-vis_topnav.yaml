@@ -14,7 +14,9 @@ topnav_dropdowns:
       folderitems:
         - title: WDP 1.0.0
           url: /index.html
-    - title: Normalizer Versions
+    - title: Wizz-Vis Versions
       folderitems:
+        - title: Wizz-Vis Latest
+          url: /wizz-vis_latest_index.html
         - title: Wizz-Vis 0.11.0
           url: /wizz-vis_0.11.0_index.html

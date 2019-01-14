@@ -119,6 +119,16 @@ defaults:
       topnav: normalizer_topnav
   -
     scope:
+      path: "pages/wizz-vis/latest"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: wizz-vis_latest_sidebar
+      topnav: wizz-vis_topnav
+  -
+    scope:
       path: "pages/wizz-vis/0.11.0"
       type: "pages"
     values:

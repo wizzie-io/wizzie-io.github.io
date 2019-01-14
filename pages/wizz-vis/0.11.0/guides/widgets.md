@@ -1,6 +1,8 @@
 ---
-title: Wizz-Vis Widgets
+title: Widgets
 permalink: /wizz-vis_0.11.0_widgets.html
+version: 0.11.0
+toc: true
 ---
 
 Widget is the basic visualization element at Wizz-Vis. It represent a KPI selecting Dimensions and Aggregators from a Datasource. The style and behavior could be modified with the built-in options from each widget.
@@ -133,6 +135,17 @@ Also, granularity can be represented with period:
 * PT1H
 * P1D
 
+Widgets which must have the granularity set to `all`, do not need to indicate the granularity at the time of creation.
+
+If a widget with granularity other than `all` has no granularity setted, it will be assigned one related to the selected time interval. Otherwise, it will use its own granularity.
+
+* PT1M: Less than or equal to one hour
+* PT5M: From one to six hours
+* PT1H: From six hours to one week
+* P1D: From one week to three months
+* P1W: From three months to one year
+* P1M: More than one year
+
 You have more information in Druid docs: [Aggregation Granularity](http://druid.io/docs/latest/querying/granularities.html).
 
 ### limit
@@ -200,14 +213,14 @@ Widget's data can be filter, indicating which rows of data should be included in
 * Comparasion
 * Regexp
 
-## Collection
+## Widget Types
 
 ### WidgetSerie
 
 <figure class="third">
-    <a href="{{ '/images/wizz-vis/widgets/serie_line.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/serie_line.png' | relative_url }}"></a>
-    <a href="{{ '/images/wizz-vis/widgets/serie_bar.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/serie_bar.png' | relative_url }}"></a>
-    <a href="{{ '/images/wizz-vis/widgets/serie_area.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/serie_area.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/serie_line.png' | relative_url }}"><img src="{{ '/assets/images/widgets/serie_line.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/serie_bar.png' | relative_url }}"><img src="{{ '/assets/images/widgets/serie_bar.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/serie_area.png' | relative_url }}"><img src="{{ '/assets/images/widgets/serie_area.png' | relative_url }}"></a>
     <figcaption>Line, Bar and Area widgets.</figcaption>
 </figure>
 
@@ -230,19 +243,18 @@ We can select between three types of chart. It can be configured through `option
 
 By default, if no value is provided, `line` will be used.
 
-This widget also has the [compare](#compare) and [threshold](#threshold) features available.
+This widget also has the [compare]({{ '/guides/compare' | relative_url }}) and [threshold]({{ '/guides/thresholds' | relative_url }}) features available.
 
 ### WidgetBar
 
 <figure>
-    <a href="{{ '/images/wizz-vis/widgets/bar.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/bar.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/bar.png' | relative_url }}"><img src="{{ '/assets/images/widgets/bar.png' | relative_url }}"></a>
 </figure>
 
 It will represent a TopN query. In addition to the required attributes, we have to set:
 
 * dimensions (one)
-* aggregators (at least one)
-* granularity (set to `all`)
+* aggregators (one)
 * limit
 
 If more than one aggregator is set, only one will be represented (or a post aggregation that use these aggregators if necessary).
@@ -255,12 +267,12 @@ We can set the main color of the graph through the `options` attribute.
 }
 ```
 
-This widget also has the [threshold](#threshold) feature available.
+This widget also has the [threshold]({{ '/guides/thresholds' | relative_url }}) feature available.
 
 ### WidgetPie
 
 <figure>
-    <a href="{{ '/images/wizz-vis/widgets/pie.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/pie.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/pie.png' | relative_url }}"><img src="{{ '/assets/images/widgets/pie.png' | relative_url }}"></a>
 </figure>
 
 It will represent a TopN query. In addition to the required attributes, we have to set:
@@ -272,8 +284,8 @@ It will represent a TopN query. In addition to the required attributes, we have 
 ### WidgetValue
 
 <figure class="half">
-    <a href="{{ '/images/wizz-vis/widgets/value_1.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/value_1.png' | relative_url }}"></a>
-    <a href="{{ '/images/wizz-vis/widgets/value_2.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/value_2.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/value_1.png' | relative_url }}"><img src="{{ '/assets/images/widgets/value_1.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/value_2.png' | relative_url }}"><img src="{{ '/assets/images/widgets/value_2.png' | relative_url }}"></a>
     <figcaption>Different configurations for Value widget.</figcaption>
 </figure>
 
@@ -329,12 +341,12 @@ If we want to represent the serie with a custom color, options must be set as:
 }
 ```
 
-This widget also has the [compare](#compare) feature available.
+This widget also has the [compare]({{ '/guides/compare' | relative_url }}) feature available.
 
 ### WidgetTable
 
 <figure>
-    <a href="{{ '/images/wizz-vis/widgets/table.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/table.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/table.png' | relative_url }}"><img src="{{ '/assets/images/widgets/table.png' | relative_url }}"></a>
 </figure>
 
 It will represent a TopN or GroupBy query. In addition to the required attributes, we have to set:
@@ -343,7 +355,7 @@ It will represent a TopN or GroupBy query. In addition to the required attribute
 * aggregators (at least one)
 * limit
 
-This widget also has the [compare](#compare) feature available.
+This widget also has the [compare]({{ '/guides/compare' | relative_url }}) feature available.
 
 If the table use more than one aggregator, we can select which ones use the compare feature through the `compare` option at `options` attribute:
 
@@ -359,18 +371,18 @@ If the `aggregators` option is not included, all aggregators used in the table w
 ### WidgetHeatmap
 
 <figure>
-    <a href="{{ '/images/wizz-vis/widgets/heatmap.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/heatmap.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/heatmap.png' | relative_url }}"><img src="{{ '/assets/images/widgets/heatmap.png' | relative_url }}"></a>
 </figure>
 
 * dimensions (one, representing coordinates)
 * aggregators (one)
-* granularity (`all`)
 * limit
 
-Also, we can set the size, color and behavior of each point through the `options` attribute.
+Also, we can set the visibility of the legend, or the size, color and behavior of each point through the `options` attribute.
 
 ```json
 "options": {
+  "legend": true | false, (default: true)
   "max_zoom": 15, (default: 1)
   "max_value": "max" | "average" | Number, (default: "max")
   "blur": 5, (default: 10)
@@ -391,7 +403,7 @@ Also, we can set the size, color and behavior of each point through the `options
 ### WidgetLocation
 
 <figure>
-    <a href="{{ '/images/wizz-vis/widgets/location.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/location.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/location.png' | relative_url }}"><img src="{{ '/assets/images/widgets/location.png' | relative_url }}"></a>
 </figure>
 
 There are two ways to represent this widget. One of them using the coordinates as a dimension and another one using the coordinates as a aggregator.
@@ -413,7 +425,7 @@ In the aggregator way, we have to set, apart to the required attributes:
 ### WidgetPlaneLocation
 
 <figure>
-    <a href="{{ '/images/wizz-vis/widgets/plane_location.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/plane_location.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/plane_location.png' | relative_url }}"><img src="{{ '/assets/images/widgets/plane_location.png' | relative_url }}"></a>
 </figure>
 
 Similar to WidgetLocation, but representing the markers over an image instead of a map.
@@ -474,14 +486,13 @@ If no `threshold_metric` is configured, it will use the first aggregator configu
 ### WidgetPlane
 
 <figure>
-    <a href="{{ '/images/wizz-vis/widgets/plane.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/plane.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/plane.png' | relative_url }}"><img src="{{ '/assets/images/widgets/plane.png' | relative_url }}"></a>
 </figure>
 
 Similar to WidgetHeatmap, but representing the data over an image instead of a map.
 
 * dimensions (one, representing coordinates)
 * aggregators (one)
-* granularity (`all`)
 * limit
 
 It needs GPS markers to convert the latitude-longitude data to x-y points. Al least, three gps markers have to be configured.
@@ -490,31 +501,36 @@ x-y points are references for a image point starting at top-left corner of the i
 
 To keep the proportions of the used image, we have to use `keep_ratio` property.
 
+We can show or hide the legend through the `legend` property by setting it to true or false (default to true).
+
 The `options` attribute would be as follows:
 
 ```json
 {
+  "max_value": "max" | "average" | Number, (default: "max")
+  "opacity": 0.5, (default: 1)
+  "radius": 15, (default: 40)
   "image": "https://www.bookingtaxibarcelona.com/wp-content/uploads/2015/03/fira-gran-via-map.png",
   "keep_ratio": true,
   "gps_markers": [
     { "x": 261, "y": 208, "latitude": 41.355151, "longitude": 2.127733 },
     { "x": 530, "y": 217, "latitude": 41.357172, "longitude": 2.130533 },
     { "x": 785, "y": 406, "latitude": 41.3559, "longitude": 2.138092 }
-  ]
+  ],
+  "legend": false
 }
 ```
 
 ### WidgetSankey
 
 <figure>
-    <a href="{{ '/images/wizz-vis/widgets/sankey.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/sankey.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/sankey.png' | relative_url }}"><img src="{{ '/assets/images/widgets/sankey.png' | relative_url }}"></a>
 </figure>
 
 It will represent a GroupBy query. In addition to the required attributes, we have to set:
 
 * dimensions (two or more)
 * aggregators (one)
-* granularity (all)
 * limit
 
 The order of the dimensions is a bit random. So the order could be set in the options attribute:
@@ -530,14 +546,13 @@ The name of dimensions at `ordered_dimensions` should be the same as those confi
 ### WidgetChord
 
 <figure>
-    <a href="{{ '/images/wizz-vis/widgets/chord.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/chord.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/chord.png' | relative_url }}"><img src="{{ '/assets/images/widgets/chord.png' | relative_url }}"></a>
 </figure>
 
 It will represent a GroupBy query. In addition to the required attributes, we have to set:
 
 * dimensions (two: origin and destination)
 * aggregators (one)
-* granularity (all)
 * limit
 
 The order of the dimensions is a bit random. So the origin and the destination to calculate the matrix values can be set in the options attribute. Also, we can set the legend option:
@@ -553,7 +568,7 @@ The order of the dimensions is a bit random. So the origin and the destination t
 ### WidgetMultiserie
 
 <figure>
-    <a href="{{ '/images/wizz-vis/widgets/multiserie.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/multiserie.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/multiserie.png' | relative_url }}"><img src="{{ '/assets/images/widgets/multiserie.png' | relative_url }}"></a>
 </figure>
 
 It will represent a Timeserie query for each value obtained from a TopN query. In addition to the required attributes, we have to set:
@@ -573,7 +588,7 @@ By default, if no value is provided, `line` will be used.
 
 We can set the `stacked` property to true or false if we want the graphs to be stacked.
 
-This widget also has the [threshold](#threshold) feature available.
+This widget also has the [threshold]({{ '/guides/thresholds' | relative_url }}) feature available.
 
 `options` attribute example:
 
@@ -591,7 +606,7 @@ This widget also has the [threshold](#threshold) feature available.
 ### WidgetRoute
 
 <figure>
-    <a href="{{ '/images/wizz-vis/widgets/route.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/route.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/route.png' | relative_url }}"><img src="{{ '/assets/images/widgets/route.png' | relative_url }}"></a>
 </figure>
 
 There are two ways to represent this widget. One of them using the coordinates as a dimension and another one using the coordinates as a aggregator.
@@ -637,7 +652,7 @@ It can be set in the options attribute:
 ### WidgetPlaneRoute
 
 <figure>
-    <a href="{{ '/images/wizz-vis/widgets/plane_route.png' | relative_url }}"><img src="{{ '/images/wizz-vis/widgets/plane_route.png' | relative_url }}"></a>
+    <a href="{{ '/assets/images/widgets/plane_route.png' | relative_url }}"><img src="{{ '/assets/images/widgets/plane_route.png' | relative_url }}"></a>
 </figure>
 
 There are two ways to represent this widget. One of them using the coordinates as a dimension and another one using the coordinates as a aggregator.
@@ -696,7 +711,7 @@ Also, the attributes that can be configured using `options` field are:
 
 To keep the proportions of the used image, we have to use `keep_ratio` property.
 
-A link could be associated to the image. When clicking, it will open the `url`, that could be an external resource (`"type": "absolute"`) or a dashboard link (`"type": "dashboard"`).
+A link could be associated to the image. When clicking, it will open the `url`, that could be an external resource (`"type": "absolute"`) or a dashboard link (`"type": "dashboard"`). You can redirect to the previous page by setting the property `url` to `back` (`"url": "back"`).
 
 ### WidgetHistogram
 
@@ -710,7 +725,6 @@ It will have two ways of representation:
 In addition to the required attributes, we have to set:
 
 * aggregators (one)
-* granularity (all)
 * limit
 
 We can set the optional discard values option by specifying a value between `previous` or `next`:
@@ -744,7 +758,7 @@ To configure customBuckets through options:
 }
 ```
 
-This widget also has the [threshold](#threshold) feature available.
+This widget also has the [threshold]({{ '/guides/thresholds' | relative_url }}) feature available.
 
 ### WidgetText
 
@@ -756,76 +770,6 @@ Also, the attributes that can be configured using options field are:
 "options": {
   "text": "Your text",
   "fontSize": "42px"
-}
-```
-
-## Compare
-
-<figure class="half">
-    <a href="{{ '/images/wizz-vis/compare_1.png' | relative_url }}"><img src="{{ '/images/wizz-vis/compare_1.png' | relative_url }}"></a>
-    <a href="{{ '/images/wizz-vis/compare_2.png' | relative_url }}"><img src="{{ '/images/wizz-vis/compare_2.png' | relative_url }}"></a>
-    <figcaption></figcaption>
-</figure>
-
-Several widgets have the ability to be compared within a past interval. The referenced interval is configured through the `options` attribute in the way of `amount` `range` ago.
-
-```json
-{
-  "compare": {
-    "range": "minutes" | "hours" | "days" | "weeks" | "months",
-    "amount": 2
-  }
-}
-```
-
-For instance, if we have a widget configured to represent a metric for today (Monday) and we want to compare that metric with the Monday from past week, we have to configure the `compare` option with `range: week` and `amount: 1`.
-
-Also, we can use `previous_period` as `range` value, without the needed of complete the `amount` value.
-
-## Threshold
-
-<figure class="half">
-    <a href="{{ '/images/wizz-vis/thresholds_1.png' | relative_url }}"><img src="{{ '/images/wizz-vis/thresholds_1.png' | relative_url }}"></a>
-    <a href="{{ '/images/wizz-vis/thresholds_2.png' | relative_url }}"><img src="{{ '/images/wizz-vis/thresholds_2.png' | relative_url }}"></a>
-    <figcaption></figcaption>
-</figure>
-
-Several widgets have the ability to represent threshold lines through the `options` attributes.
-
-Those thresholds have to be configured setting a color and a label as description.
-
-```json
-{
-  "thresholds": [
-    { "value": 200000000, "color": "red", "label": "Threshold 1" },
-    { "value": 100000000, "color": "#000000", "label": "Threshold 2" }
-  ]
-}
-```
-
-## Drill-Down
-
-<figure>
-    <a href="{{ '/images/wizz-vis/drill_down.png' | relative_url }}"><img src="{{ '/images/wizz-vis/drill_down.png' | relative_url }}"></a>
-    <figcaption></figcaption>
-</figure>
-
-We can create drill downs at each widget. The drill down has to be set in the `options` attribute. The drill down can contains more than one link, external resources and dashboard links.
-
-```json
-{
-  "links": [
-    {
-      "url": "https://wizzie.io",
-      "name": "Wizzie Web",
-      "type": "absolute"
-    },
-    {
-      "url": "/dashboards/1",
-      "name": "Clients detail",
-      "type": "dashboard"
-    }
-  ]
 }
 ```
 

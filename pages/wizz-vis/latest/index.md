@@ -1,7 +1,7 @@
 ---
-title: Wizz-Vis 0.11.0
-permalink: /wizz-vis_0.11.0_index.html
-version: 0.11.0
+title: Wizz-Vis latest
+permalink: /wizz-vis_latest_index.html
+version: latest
 toc: false
 ---
 

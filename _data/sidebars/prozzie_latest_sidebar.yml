@@ -1,0 +1,39 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Prozzie
+  version: latest
+  folders:
+
+  - title: Content
+    output: web
+    folderitems:
+    - title: Home
+      url: /prozzie_latest_index.html
+      output: web
+      type: homepage
+    - title: Installation
+      url: /prozzie_latest_installation.html
+      output: web
+      type: homepage
+    - title: Command Line Interface
+      url: /prozzie_latest_cli.html
+      output: web
+      type: homepage
+    - title: Limitations
+      url: /prozzie_latest_limitations.html
+      output: web
+      type: homepage
+    - title: Protocols
+      url: /prozzie_latest_protocols.html
+      output: web
+      type: homepage
+    - title: FAQs
+      url: /prozzie_latest_faqs.html
+      output: web
+      type: homepage
+    - title: Contributing
+      url: /prozzie_latest_contributing.html
+      output: web
+      type: homepageage

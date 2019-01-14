@@ -187,6 +187,26 @@ defaults:
     values:
       sidebar: wdp-cli_0_3_0_sidebar
       topnav: wdp-cli_topnav
+  -
+    scope:
+      path: "pages/prozzie/latest"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: prozzie_latest_sidebar
+      topnav: prozzie_topnav
+  -
+    scope:
+      path: "pages/prozzie/0.7.0"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: prozzie_0_7_0_sidebar
+      topnav: prozzie_topnav
 
 # these are defaults used for the frontmatter for these file types
 

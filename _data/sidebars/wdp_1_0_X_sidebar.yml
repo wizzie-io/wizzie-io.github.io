@@ -85,18 +85,9 @@ entries:
 
   - title: Prozzie
     output: web
-
     folderitems:
-    - title: Installation
-      url: /wdp_1.0.X_index.html
-      output: web
-
-    - title: Connectors
-      url: /wdp_1.0.X_index.html
-      output: web
-
-    - title: Prozzie CLI
-      url: /wdp_1.0.X_index.html
+    - title: Prozzie Manual Reference
+      url: /prozzie_0.7.0_index.html
       output: web
 
   - title: WDP Command Line Interface

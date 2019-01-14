@@ -15,11 +15,11 @@ Each dashboard can be customized with two different themes, `light` and `dark`.
 
 ### Light Theme
 
-![light-theme]({{ '/assets/images/light-theme.png' | relative_url }}){: .align-center}
+{% include image.html file="/wizz-vis/light-theme.png" alt="Light Theme" %}
 
 ### Dark Theme
 
-![dark-theme]({{ '/assets/images/dark-theme.png' | relative_url }}){: .align-center}
+{% include image.html file="/wizz-vis/dark-theme.png" alt="Dark Theme" %}
 
 ## Reload
 
@@ -35,10 +35,10 @@ The options are:
 * 1 hour
 * 2 hours
 
-![dashboard-reload]({{ '/assets/images/dashboard-reload.png' | relative_url }}){: .align-center}
+{% include image.html file="/wizz-vis/dashboard-reload.png" alt="Dashboard Reload" %}
 
 ## Lock
 
 The dashboards can be blocked, not allowing the creation of new widgets or the modification of the position of these.
 
-![dashboard-locked]({{ '/assets/images/dashboard-locked.png' | relative_url }}){: .align-center}
+{% include image.html file="/wizz-vis/dashboard-locked.png" alt="Dashboard Locked" %}

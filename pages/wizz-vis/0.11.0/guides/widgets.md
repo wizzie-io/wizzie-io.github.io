@@ -146,7 +146,7 @@ If a widget with granularity other than `all` has no granularity setted, it will
 * P1W: From three months to one year
 * P1M: More than one year
 
-You have more information in Druid docs: [Aggregation Granularity](http://druid.io/docs/latest/querying/granularities.html).
+You have more information in Druid docs: [Aggregation Granularity](http://druid.io/docs/latest/querying/granularities.html){:target="_blank"}.
 
 ### limit
 
@@ -183,26 +183,22 @@ We will cover specific parameters later.
 
 Each widget could represent one or more dimensions, depending on widget's type.
 
-**Note:** Only dimensions that belong to the datasource selected could be used.
-{: .notice--warning}
+{% include warning.html content="Only dimensions that belong to the datasource selected could be used." %}
 
 ### aggregators
 
 Each widget could represent one or more aggregator, depending on widget's type. Also, aggregators could be used to be referenced by post aggregators.
 
-**Note:** Only aggregators that belong to the datasource selected could be used.
-{: .notice--warning}
+{% include warning.html content="Only aggregators that belong to the datasource selected could be used." %}
 
 ### post_aggregators
 
 Various aggregators could be combined between them and make operations, resulting in a new metric to be used by the widget to be represented.
 
-**Note:** The aggregators referenced by the post aggregators have to be included as aggregators themselves.
-{: .notice--warning}
+{% include warning.html content="The aggregators referenced by the post aggregators have to be included as aggregators themselves." %}
 
-**ProTip:** If more than one aggregator or post aggregator has been defined, we can select which metric or metrics will be represented in the widget using the property `metrics` at `options` attribute.
-For instance, if we have included as aggregators `flows` and `events` and then a post aggregator named `flows_per_event`, we can select that only the last one is represented.
-{: .notice--info}
+{% include tip.html content="If more than one aggregator or post aggregator has been defined, we can select which metric or metrics will be represented in the widget using the property `metrics` at `options` attribute.
+For instance, if we have included as aggregators `flows` and `events` and then a post aggregator named `flows_per_event`, we can select that only the last one is represented." %}
 
 ### filters
 
@@ -217,12 +213,9 @@ Widget's data can be filter, indicating which rows of data should be included in
 
 ### WidgetSerie
 
-<figure class="third">
-    <a href="{{ '/assets/images/widgets/serie_line.png' | relative_url }}"><img src="{{ '/assets/images/widgets/serie_line.png' | relative_url }}"></a>
-    <a href="{{ '/assets/images/widgets/serie_bar.png' | relative_url }}"><img src="{{ '/assets/images/widgets/serie_bar.png' | relative_url }}"></a>
-    <a href="{{ '/assets/images/widgets/serie_area.png' | relative_url }}"><img src="{{ '/assets/images/widgets/serie_area.png' | relative_url }}"></a>
-    <figcaption>Line, Bar and Area widgets.</figcaption>
-</figure>
+{% include image.html file="wizz-vis/widgets/serie_line.png" alt="Line Serie" caption="Line Serie Widget" %}
+{% include image.html file="wizz-vis/widgets/serie_bar.png" alt="Bar Serie" caption="Bar Serie Widget" %}
+{% include image.html file="wizz-vis/widgets/serie_area.png" alt="Area Serie" caption="Area Serie Widget" %}
 
 This type of widget will represent timeseries, so the attributes necessaries, in addition to the required ones, are:
 
@@ -243,13 +236,11 @@ We can select between three types of chart. It can be configured through `option
 
 By default, if no value is provided, `line` will be used.
 
-This widget also has the [compare]({{ '/guides/compare' | relative_url }}) and [threshold]({{ '/guides/thresholds' | relative_url }}) features available.
+This widget also has the [compare](/wizz-vis_{{page.version}}_compare.html) and [threshold](/wizz-vis_{{page.version}}_thresholds.html) features available.
 
 ### WidgetBar
 
-<figure>
-    <a href="{{ '/assets/images/widgets/bar.png' | relative_url }}"><img src="{{ '/assets/images/widgets/bar.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="wizz-vis/widgets/bar.png" alt="Bar Widget" %}
 
 It will represent a TopN query. In addition to the required attributes, we have to set:
 
@@ -267,13 +258,11 @@ We can set the main color of the graph through the `options` attribute.
 }
 ```
 
-This widget also has the [threshold]({{ '/guides/thresholds' | relative_url }}) feature available.
+This widget also has the [threshold](/wizz-vis_{{page.version}}_thresholds.html) feature available.
 
 ### WidgetPie
 
-<figure>
-    <a href="{{ '/assets/images/widgets/pie.png' | relative_url }}"><img src="{{ '/assets/images/widgets/pie.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="wizz-vis/widgets/pie.png" alt="Pie Widget" %}
 
 It will represent a TopN query. In addition to the required attributes, we have to set:
 
@@ -283,11 +272,8 @@ It will represent a TopN query. In addition to the required attributes, we have 
 
 ### WidgetValue
 
-<figure class="half">
-    <a href="{{ '/assets/images/widgets/value_1.png' | relative_url }}"><img src="{{ '/assets/images/widgets/value_1.png' | relative_url }}"></a>
-    <a href="{{ '/assets/images/widgets/value_2.png' | relative_url }}"><img src="{{ '/assets/images/widgets/value_2.png' | relative_url }}"></a>
-    <figcaption>Different configurations for Value widget.</figcaption>
-</figure>
+{% include image.html file="wizz-vis/widgets/value_1.png" alt="Value Widget" %}
+{% include image.html file="wizz-vis/widgets/value_2.png" alt="Value Widget" %}
 
 It will represent a single value looking at the max, min, average of sum of values in the serie returned. Also, the serie and a gauge with thresholds could be represented in the widget.
 
@@ -341,13 +327,11 @@ If we want to represent the serie with a custom color, options must be set as:
 }
 ```
 
-This widget also has the [compare]({{ '/guides/compare' | relative_url }}) feature available.
+This widget also has the [compare](/wizz-vis_{{page.version}}_compare.html) feature available.
 
 ### WidgetTable
 
-<figure>
-    <a href="{{ '/assets/images/widgets/table.png' | relative_url }}"><img src="{{ '/assets/images/widgets/table.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="wizz-vis/widgets/table.png" alt="Table Widget" %}
 
 It will represent a TopN or GroupBy query. In addition to the required attributes, we have to set:
 
@@ -355,7 +339,7 @@ It will represent a TopN or GroupBy query. In addition to the required attribute
 * aggregators (at least one)
 * limit
 
-This widget also has the [compare]({{ '/guides/compare' | relative_url }}) feature available.
+This widget also has the [compare](/wizz-vis_{{page.version}}_compare.html) feature available.
 
 If the table use more than one aggregator, we can select which ones use the compare feature through the `compare` option at `options` attribute:
 
@@ -370,9 +354,7 @@ If the `aggregators` option is not included, all aggregators used in the table w
 
 ### WidgetHeatmap
 
-<figure>
-    <a href="{{ '/assets/images/widgets/heatmap.png' | relative_url }}"><img src="{{ '/assets/images/widgets/heatmap.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="wizz-vis/widgets/heatmap.png" alt="Heatmap Widget" %}
 
 * dimensions (one, representing coordinates)
 * aggregators (one)
@@ -402,9 +384,7 @@ Also, we can set the visibility of the legend, or the size, color and behavior o
 
 ### WidgetLocation
 
-<figure>
-    <a href="{{ '/assets/images/widgets/location.png' | relative_url }}"><img src="{{ '/assets/images/widgets/location.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="wizz-vis/widgets/location.png" alt="Location Widget" %}
 
 There are two ways to represent this widget. One of them using the coordinates as a dimension and another one using the coordinates as a aggregator.
 
@@ -424,9 +404,7 @@ In the aggregator way, we have to set, apart to the required attributes:
 
 ### WidgetPlaneLocation
 
-<figure>
-    <a href="{{ '/assets/images/widgets/plane_location.png' | relative_url }}"><img src="{{ '/assets/images/widgets/plane_location.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="wizz-vis/widgets/plane_location.png" alt="Plane Location Widget" %}
 
 Similar to WidgetLocation, but representing the markers over an image instead of a map.
 
@@ -485,9 +463,7 @@ If no `threshold_metric` is configured, it will use the first aggregator configu
 
 ### WidgetPlane
 
-<figure>
-    <a href="{{ '/assets/images/widgets/plane.png' | relative_url }}"><img src="{{ '/assets/images/widgets/plane.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="wizz-vis/widgets/plane.png" alt="Plane Widget" %}
 
 Similar to WidgetHeatmap, but representing the data over an image instead of a map.
 
@@ -523,9 +499,7 @@ The `options` attribute would be as follows:
 
 ### WidgetSankey
 
-<figure>
-    <a href="{{ '/assets/images/widgets/sankey.png' | relative_url }}"><img src="{{ '/assets/images/widgets/sankey.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="wizz-vis/widgets/sankey.png" alt="Sankey Widget" %}
 
 It will represent a GroupBy query. In addition to the required attributes, we have to set:
 
@@ -545,9 +519,7 @@ The name of dimensions at `ordered_dimensions` should be the same as those confi
 
 ### WidgetChord
 
-<figure>
-    <a href="{{ '/assets/images/widgets/chord.png' | relative_url }}"><img src="{{ '/assets/images/widgets/chord.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="wizz-vis/widgets/chord.png" alt="Chord Widget" %}
 
 It will represent a GroupBy query. In addition to the required attributes, we have to set:
 
@@ -567,9 +539,7 @@ The order of the dimensions is a bit random. So the origin and the destination t
 
 ### WidgetMultiserie
 
-<figure>
-    <a href="{{ '/assets/images/widgets/multiserie.png' | relative_url }}"><img src="{{ '/assets/images/widgets/multiserie.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="wizz-vis/widgets/multiserie.png" alt="Multiserie Widget" %}
 
 It will represent a Timeserie query for each value obtained from a TopN query. In addition to the required attributes, we have to set:
 
@@ -588,7 +558,7 @@ By default, if no value is provided, `line` will be used.
 
 We can set the `stacked` property to true or false if we want the graphs to be stacked.
 
-This widget also has the [threshold]({{ '/guides/thresholds' | relative_url }}) feature available.
+This widget also has the [threshold](/wizz-vis_{{page.version}}_thresholds.html) feature available.
 
 `options` attribute example:
 
@@ -605,9 +575,7 @@ This widget also has the [threshold]({{ '/guides/thresholds' | relative_url }}) 
 
 ### WidgetRoute
 
-<figure>
-    <a href="{{ '/assets/images/widgets/route.png' | relative_url }}"><img src="{{ '/assets/images/widgets/route.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="wizz-vis/widgets/route.png" alt="Route Widget" %}
 
 There are two ways to represent this widget. One of them using the coordinates as a dimension and another one using the coordinates as a aggregator.
 
@@ -651,9 +619,7 @@ It can be set in the options attribute:
 
 ### WidgetPlaneRoute
 
-<figure>
-    <a href="{{ '/assets/images/widgets/plane_route.png' | relative_url }}"><img src="{{ '/assets/images/widgets/plane_route.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="wizz-vis/widgets/plane_route.png" alt="Plane Route Widget" %}
 
 There are two ways to represent this widget. One of them using the coordinates as a dimension and another one using the coordinates as a aggregator.
 
@@ -758,7 +724,7 @@ To configure customBuckets through options:
 }
 ```
 
-This widget also has the [threshold]({{ '/guides/thresholds' | relative_url }}) feature available.
+This widget also has the [threshold](/wizz-vis_{{page.version}}_thresholds.html) feature available.
 
 ### WidgetText
 

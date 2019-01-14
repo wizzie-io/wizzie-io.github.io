@@ -4,11 +4,8 @@ permalink: /wizz-vis_latest_thresholds.html
 version: latest
 ---
 
-<figure class="half">
-    <a href="{{ '/assets/images/thresholds_1.png' | relative_url }}"><img src="{{ '/assets/images/thresholds_1.png' | relative_url }}"></a>
-    <a href="{{ '/assets/images/thresholds_2.png' | relative_url }}"><img src="{{ '/assets/images/thresholds_2.png' | relative_url }}"></a>
-    <figcaption></figcaption>
-</figure>
+{% include image.html file="wizz-vis/thresholds_1.png" alt="Threshold Feature" max-width=350 %}
+{% include image.html file="wizz-vis/thresholds_2.png" alt="Threshold Feature" max-width=350 %}
 
 Several widgets have the ability to represent threshold lines through the `options` attributes.
 

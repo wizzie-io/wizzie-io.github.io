@@ -9,9 +9,7 @@ Wizz-Vis comes with a RESTful API for management and automation purpose. With th
 
 ## Swagger UI
 
-<figure>
-    <a href="{{ '/assets/images/swagger-ui.png' | relative_url }}"><img src="{{ '/assets/images/swagger-ui.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="wizz-vis/swagger-ui.png" alt="Swagger UI" %}
 
 The users can interact and read the API documentation located at `/swagger-ui`.
 

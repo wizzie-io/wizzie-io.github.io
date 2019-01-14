@@ -4,11 +4,8 @@ permalink: /wizz-vis_0.11.0_compare.html
 version: 0.11.0
 ---
 
-<figure class="half">
-    <a href="{{ '/assets/images/compare_1.png' | relative_url }}"><img src="{{ '/assets/images/compare_1.png' | relative_url }}"></a>
-    <a href="{{ '/assets/images/compare_2.png' | relative_url }}"><img src="{{ '/assets/images/compare_2.png' | relative_url }}"></a>
-    <figcaption></figcaption>
-</figure>
+{% include image.html file="wizz-vis/compare_1.png" alt="Compare Feature" max-width=350 %}
+{% include image.html file="wizz-vis/compare_2.png" alt="Compare Feature" max-width=350 %}
 
 Several widgets have the ability to be compared within a past interval. The referenced interval is configured through the `options` attribute in the way of `amount` `range` ago.
 

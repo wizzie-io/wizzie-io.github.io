@@ -39,7 +39,7 @@ Before run the Wizz-Vis container, there are some requirements necessary to depl
 | `PRIMARY_COLOR`            | Primary logo in hex format | #f68d2e |
 | `SECONDARY_COLOR`          | Secondary logo in hex format | #8c8c8c |
 
-You can visit <https://www.mapbox.com/help/how-access-tokens-work/> and see how you can create a Mapbox Token.
+You can visit <https://www.mapbox.com/help/how-access-tokens-work/>{:target="_blank"} and see how you can create a Mapbox Token.
 
 ## Start Wizz-Vis
 
@@ -70,4 +70,4 @@ $ docker run --rm --name my-wizz-vis-sidekiq \
   wizzieio/wizz-vis:{{ page.version }}
 ```
 
-Now, you can visit <http://localhost:3000> to access Wizz-Vis.
+Now, you can visit <http://localhost:3000>{:target="_blank"} to access Wizz-Vis.

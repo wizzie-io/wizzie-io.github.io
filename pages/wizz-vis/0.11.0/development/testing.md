@@ -2,9 +2,10 @@
 title: "Development - Testing"
 permalink: /wizz-vis_0.11.0_testing.html
 version: 0.11.0
+toc: false
 ---
 
-1. Set up your development as explained at [`Development - From Scratch`](/development/from-scratch).
+1. Set up your development as explained at [`Development - From Scratch`](/wizz-vis_{{page.version}}_from_scratch.html).
 2. Run `rspec` to execute the full test suite.
 
 ```

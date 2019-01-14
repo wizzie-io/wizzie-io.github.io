@@ -33,7 +33,7 @@ The HyperLogLog algorithm generates decimal estimates with some error. At Wizz-V
 
 Represent the frequency distribution of a metric. It can be configured the number of buckets to be represented and also the breaks of that buckets.
 
-[More Info](http://druid.io/docs/latest/development/extensions-core/approximate-histograms.html)
+[More Info](http://druid.io/docs/latest/development/extensions-core/approximate-histograms.html){:target="_blank"}
 
 **Note:** The `approxHistogramFold` aggregator can be used only with the Histogram widget, that is fully customized to get all the performance out of this aggregator.
 {: .notice--warning}
@@ -43,7 +43,7 @@ Represent the frequency distribution of a metric. It can be configured the numbe
 
 A theta sketch object can be thought of as a Set data structure. At query time, sketches are read and aggregated (set unioned) together. In the end, by default, you receive the estimate of the number of unique entries in the sketch object. Also, you can use post aggregators to do union, intersection or difference on sketch columns in the same row.
 
-[More Info](http://druid.io/docs/latest/development/extensions-core/datasketches-aggregators)
+[More Info](http://druid.io/docs/latest/development/extensions-core/datasketches-aggregators){:target="_blank"}
 
 ### stringFirstFold / stringLastFold
 
@@ -66,11 +66,10 @@ Post aggregators also can be used with thetaSketch aggregators. In that case, th
 * INTERSECT
 * NOT
 
-[More Info](http://druid.io/docs/latest/querying/post-aggregations.html)
+[More Info](http://druid.io/docs/latest/querying/post-aggregations.html){:target="_blank"}
 
 ## Filtered Aggregators
 
 A filtered aggregator wraps any given aggregator, but only aggregates the values for which the given dimension filter matches.
 
-**Note:** If only the filtered results are required, consider putting the filter on the query itself, which will be much faster since it does not require scanning all the data.
-{: .notice--warning}
+{% include warning.html content="If only the filtered results are required, consider putting the filter on the query itself, which will be much faster since it does not require scanning all the data." %}

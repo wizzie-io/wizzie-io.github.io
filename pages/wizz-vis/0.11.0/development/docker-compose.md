@@ -6,13 +6,14 @@ version: 0.11.0
 
 We have a docker-compose available to deploy all the services necessary for the development environment.
 
-Depending on your OS, there are different ways of installing Docker and Docker Compose. Please, visit <https://docs.docker.com/compose/install/>
+Depending on your OS, there are different ways of installing Docker and Docker Compose. Please, visit <https://docs.docker.com/compose/install/>{:target="_blank"}
 
 Once you have Docker Compose installed, follow the below steps:
 
 1. Clone the repository and enter de directory.
 ```bash
 git clone git@github.com:wizzie-io/wizz-vis.git
+git checkout v0.11
 cd wizz-vis/
 ```
 

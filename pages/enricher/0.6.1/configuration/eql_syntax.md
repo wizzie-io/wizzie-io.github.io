@@ -3,9 +3,10 @@ title: Enricher 0.6.1
 version: 0.6.1
 permalink: /enricher_0.6.1_eql_syntax.html
 toc: true
+serviceImage: enricher/logo.svg
 ---
 
-*Enrichment Query Language* (EQL) is a query language generated with [ANTLR](https://www.antlr.org/) that allows us define that streams and fields to use and join. Before we look into details of the EQL, let's take a look at a few definitions of terms.
+*Enrichment Query Language* (EQL) is a query language generated with [ANTLR](https://www.antlr.org/){:target="_blank"} that allows us define that streams and fields to use and join. Before we look into details of the EQL, let's take a look at a few definitions of terms.
 
 |Term|Definition|
 |----------|----------|
@@ -19,9 +20,7 @@ toc: true
 
 Following provides an abstract diagram definition for EQL.
 
-<figure>
-    <a href="{{ '/assets/images/eql_syntax.png' | relative_url }}"><img src="{{ '/assets/images/eql_syntax.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="enricher/eql_syntax.png" alt="EQL Syntax" caption="EQL syntax" %}
 
 ### Joiners
 
@@ -39,15 +38,14 @@ Where:
 
 #### GLOBAL TABLE
 
-The `FROM GLOBAL TABLE` clause allows us use a stream as [Kafka Stream GlobalKTable](https://docs.confluent.io/current/streams/concepts.html#globalktable).
+The `FROM GLOBAL TABLE` clause allows us use a stream as [Kafka Stream GlobalKTable](https://docs.confluent.io/current/streams/concepts.html#globalktable){:target="_blank"}.
 
 #### Optional PARTITION BY
 
 The `[PARTITION] BY` clause allows us partition by field instead of stream's key. We are going to illustrate this behaviour in next diagram:
 
-<figure>
-    <a href="{{ '/assets/images/joiner_partition_by.png' | relative_url }}"><img src="{{ '/assets/images/joiner_partition_by.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="enricher/joiner_partition_by.png" alt="Joiner partition by" caption="Joiner partition by" %}
+
 
 ### Enrichers
 
@@ -85,9 +83,7 @@ Enricher extracts fieldA, fieldB and fieldC from both inputStream1 and inputStre
 
 This query is very simple and not enrich, Enricher only extracts and inserts fields.
 
-<figure>
-    <a href="{{ '/assets/images/simple_extraction.png' | relative_url }}"><img src="{{ '/assets/images/simple_extraction.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="enricher/simple_extraction.png" alt="Simple extraction" caption="Simple extraction" %}
 
 ### Simple streams join
 
@@ -99,9 +95,7 @@ SELECT * FROM STREAM inputStream1 JOIN SELECT fieldY FROM STREAM inputStream2 US
 
 Enricher extracts all fields from intputStream1 and join them with the fieldY from inputStream2 using simpleStreamPreferredJoiner in order to do it is necessary that the streams share the same key.
 
-<figure>
-    <a href="{{ '/assets/images/simple_join.png' | relative_url }}"><img src="{{ '/assets/images/simple_join.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="enricher/simple_join.png" alt="Simple join" caption="Simple join" %}
 
 ### Simple streams enrich
 
@@ -113,17 +107,13 @@ SELECT * FROM STREAM input ENRICH WITH simpleStreamEnrich INSERT INTO STREAM out
 
 Enricher extracts all fields from input and enrich with simpleStreamEnrich using as data source a relational database.
 
-<figure>
-    <a href="{{ '/assets/images/simple_enrich.png' | relative_url }}"><img src="{{ '/assets/images/simple_enrich.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="enricher/simple_enrich.png" alt="Simple enrich" caption="Simple enrich" %}
 
 ### Complex streams enrich and join
 
 Suppose that we have a system with data about **flow** and **location** and we have a key-value store with information about ip **reputation**:
 
-<figure>
-    <a href="{{ '/assets/images/complex_join_and_enrich.png' | relative_url }}"><img src="{{ '/assets/images/complex_join_and_enrich.png' | relative_url }}"></a>
-</figure>
+{% include image.html file="enricher/complex_join_and_enrich.png" alt="Complex join and enrich" caption="Complex join and enrich" %}
 
 We need enrich and join this information and send data to final stream **enrichflow**. In order to do this we have to define next EQL:
 

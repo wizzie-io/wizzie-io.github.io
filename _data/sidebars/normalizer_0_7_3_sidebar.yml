@@ -4,6 +4,7 @@ entries:
 - title: sidebar
   product: Normalizer
   version: 0.7.3
+  wdpVersion: 1.0.0
   folders:
 
   - title: Overview
@@ -66,7 +67,7 @@ entries:
       url: /normalizer_0.7.3_debug_functions.html
       output: web
     - title: Functions Repository
-      url: https://wizzie-io.github.io/normalizer-functions/
+      url: /normalizer-functions_latest_index.html
       output: web
 
   - title: Docker

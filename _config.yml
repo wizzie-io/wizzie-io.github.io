@@ -119,6 +119,16 @@ defaults:
       topnav: normalizer_topnav
   -
     scope:
+      path: "pages/normalizer-functions/latest"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: normalizer-functions_latest_sidebar
+      topnav: normalizer-functions_topnav
+  -
+    scope:
       path: "pages/wizz-vis/0.11.0"
       type: "pages"
     values:
@@ -147,6 +157,16 @@ defaults:
       search: true
       sidebar: enricher_0_6_1_sidebar
       topnav: enricher_topnav
+  -
+    scope:
+      path: "pages/zz-cep/latest"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: zz-cep_latest_sidebar
+      topnav: zz-cep_topnav
   -
     scope:
       path: "pages/zz-cep/0.5.1"
@@ -182,9 +202,13 @@ defaults:
 
 sidebars:
 - wdp_1_0_0_sidebar
+- normalizer_latest_sidebar
 - normalizer_0_7_3_sidebar
 - normalizer_0_7_2_sidebar
+- normalizer-functions_latest_sidebar
+- enricher_latest_sidebar
 - enricher_0_6_1_sidebar
+- zz-cep_latest_sidebar
 - zz-cep_0_5_1_sidebar
 - wdp-cli_0.3.0_sidebar
 - normalizer_latest_sidebar

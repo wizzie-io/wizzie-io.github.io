@@ -3,6 +3,7 @@ title: Normalizer Stream Configuration
 version: 0.7.3
 permalink: /normalizer_0.7.3_stream_configuration.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
 The stream configuration is the execution plan of the normalizer. Normalizer uses the stream configuration to build the Kafka Streams topology using DSL API. You can configure how the normalizer gets the stream conf to do it you need to use the [Bootstrappers](/normalizer_{{page.version}}_bootstrapper.html).
@@ -296,5 +297,5 @@ The function does not care about file names. It takes the sections defined at al
 
 
 ## Other Notes
-* If you build an invalid plan, the [PlanBuilderException](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/zz/ks/exceptions/PlanBuilderException.java) will be throw.
-* You can't do loop on the stream topology, if you define a loop the [TryToDoLoopException](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/zz/ks/exceptions/TryToDoLoopException.java) will be throw.
+* If you build an invalid plan, the [PlanBuilderException](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/zz/ks/exceptions/PlanBuilderException.java){:target="_blank"} will be throw.
+* You can't do loop on the stream topology, if you define a loop the [TryToDoLoopException](https://github.com/wizzie-io/normalizer/blob/master/service/src/main/java/zz/ks/exceptions/TryToDoLoopException.java){:target="_blank"} will be throw.

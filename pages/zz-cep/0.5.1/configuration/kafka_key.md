@@ -3,6 +3,7 @@ title: ZZ-Cep 0.5.1
 version: 0.5.1
 permalink: /zz-cep_0.5.1_kafka_key.html
 toc: true
+serviceImage: zz-cep/logo.svg
 ---
 
 

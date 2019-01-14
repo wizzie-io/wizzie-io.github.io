@@ -3,6 +3,7 @@ title: ZZ-Cep 0.5.1
 version: 0.5.1
 permalink: /zz-cep_0.5.1_base_configuration.html
 toc: false
+serviceImage: zz-cep/logo.svg
 ---
 
 The configuration file is a JSON format file where you specific the general properties to configure the cep instance. This file is different from the stream processing config file that defines the CEP processing rules.

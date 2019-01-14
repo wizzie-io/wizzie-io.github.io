@@ -3,6 +3,7 @@ title: Normalizer Base Configuration
 version: 0.7.3
 permalink: /normalizer_0.7.3_base_configuration.html
 toc: false
+serviceImage: normalizer/logo.svg
 ---
 
 The configuration file is a JSON format file where you specific the general properties to configure the normalizer instance. This file is different that stream config file that define the KS topology.
@@ -35,4 +36,4 @@ Example configuration file:
 | `metric.enable`      | Enable metrics system.      | false |
 | `max.kafka.output.topics` | Max number of kafka topics that the normalizer can create to send data using the stream config | Integer.MAX_VALUE |
 
-**Note:** If you want to configure specific [Kafka Streams properties](http://kafka.apache.org/documentation#streamsconfigs), you can add these properties to this config file. The properties `key.serde` and `value.serde` will be overrwritten by normalizer.
+**Note:** If you want to configure specific [Kafka Streams properties](http://kafka.apache.org/documentation#streamsconfigs){:target="_blank"}, you can add these properties to this config file. The properties `key.serde` and `value.serde` will be overrwritten by normalizer.

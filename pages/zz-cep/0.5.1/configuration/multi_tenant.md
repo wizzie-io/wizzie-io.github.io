@@ -3,6 +3,7 @@ title: ZZ-Cep 0.5.1
 version: 0.5.1
 permalink: /zz-cep_0.5.1_multi_tenant.html
 toc: false
+serviceImage: zz-cep/logo.svg
 ---
 
 The Cep service has a multi tenant mode, on this mode it prefix the `application.id` automatically on all the Kafka topics, except the bootstrapper and the metrics topic.

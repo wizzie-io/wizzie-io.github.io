@@ -3,6 +3,7 @@ title: Enricher latest
 version: latest
 permalink: /enricher_latest_docker_configuration.html
 toc: true
+serviceImage: enricher/logo.svg
 ---
 
 ## How to get Enricher image
@@ -24,7 +25,7 @@ First, start a zookeeper container by executing:
 $ docker run --rm --name zookeeper-svc --net=host wurstmeister/zookeeper
 ```
 
-You can find more information about `wurstmeister/zookeeper` image [here](https://hub.docker.com/r/wurstmeister/zookeeper)
+You can find more information about `wurstmeister/zookeeper` image [here](https://hub.docker.com/r/wurstmeister/zookeeper){:target="_blank"}
 
 ##### Kafka
 Now, start a kafka broker container by executing:
@@ -33,7 +34,7 @@ Now, start a kafka broker container by executing:
 $ docker run --rm --name kafka-broker --net=host -e KAFKA_ADVERTISED_HOST_NAME=localhost -e KAFKA_ZOOKEEPER_CONNECT=localhost:2181 -e KAFKA_ADVERTISED_PORT=9092 wurstmeister/kafka:0.10.2.1
 ```
 
-You can find more information about `wurstmeister/kafka` image [here](https://hub.docker.com/r/wurstmeister/kafka)
+You can find more information about `wurstmeister/kafka` image [here](https://hub.docker.com/r/wurstmeister/kafka){:target="_blank"}
 
 ##### Start Enricher
 
@@ -42,7 +43,7 @@ Once kafka broker is up, we can start a Enricher container and link it to the ka
 ```
 $ docker run --rm --name my-enricher --net=host -e APPLICATION_ID=my-enricher-app -e KAFKA_BOOTSTRAP_SERVER=localhost:9092 wizzieio/enricher:latest
 ```
-Now you can follow the [base tutorial](https://wizzie-io.github.io/enricher/getting_started/base_tutorial) to test Enricher!
+Now you can follow the [base tutorial](https://wizzie-io.github.io/enricher/getting_started/base_tutorial){:target="_blank"} to test Enricher!
 
 ### Using environment variables in enricher configuration
 

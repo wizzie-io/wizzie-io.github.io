@@ -3,6 +3,7 @@ title: Enricher 0.6.1
 version: 0.6.1
 permalink: /enricher_0.6.1_multi_tenant.html
 toc: false
+serviceImage: enricher/logo.svg
 ---
 
 The Enricher service has a multi tenant mode, in this mode it prefixes the `application.id` automatically in all the Kafka topics, except the bootstrapper and metric topic.

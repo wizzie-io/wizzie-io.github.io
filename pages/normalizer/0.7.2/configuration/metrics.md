@@ -3,9 +3,10 @@ title: Normalizer Metrics
 version: 0.7.2
 permalink: /normalizer_0.7.2_metrics.html
 toc: true
+serviceImage: normalizer/logo.svg
 ---
 
-The Normalizer service uses the [Wizzie Metrics Library](https://github.com/wizzie-io/metrics-library) to build his metrics, by default it sends JVM metrics but you can register new metrics that will be exported too.
+The Normalizer service uses the [Wizzie Metrics Library](https://github.com/wizzie-io/metrics-library){:target="_blank"} to build his metrics, by default it sends JVM metrics but you can register new metrics that will be exported too.
 
 ## Properties
 
@@ -41,4 +42,4 @@ This listener `io.wizzie.metrics.listeners.KafkaMetricListener` send the transfo
 This listener adds a new property to specify the metrics Kafka topic `metric.kafka.topic`, by default is `__normalizer_metrics`
 
 ### Custom Listeners
-You can made new listeners to do this you need to implement the [MetricListener Class](https://github.com/wizzie-io/metrics-library/blob/master/src/main/java/io/wizzie/metrics/listeners/MetricListener.java).
+You can made new listeners to do this you need to implement the [MetricListener Class](https://github.com/wizzie-io/metrics-library/blob/master/src/main/java/io/wizzie/metrics/listeners/MetricListener.java){:target="_blank"}.

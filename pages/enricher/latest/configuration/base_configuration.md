@@ -3,6 +3,7 @@ title: Enricher latest
 version: latest
 permalink: /enricher_latest_base_configuration.html
 toc: false
+serviceImage: enricher/logo.svg
 ---
 
 The configuration file is a JSON format file where you specify the general properties to configure the enricher instance. This file is different from stream config file that define the KS topology.
@@ -33,7 +34,7 @@ Example configuration file:
 | `metric.enable`      | Enable metrics system.      | false |
 | `metric.listeners`      | Array with metrics listeners. More info: [Metrics](https://github.com/wizzie-io/metrics-library/tree/master/src/main/java/io/wizzie/metrics/listeners)      | ["io.wizzie.metrics. listeners.ConsoleMetricListener"] |
 | `metric.interval`      | Metric report interval (milliseconds)      |  60000 |
-| `multi.id`      | This property is used when you have multiple enricher instances with different `application.id` and the enricher uses the same topic names. More Info [Multi Tenant](/enricher_{{page.version}}_multi_tenanthtml)      |  false |
+| `multi.id`      | This property is used when you have multiple enricher instances with different `application.id` and the enricher uses the same topic names. More Info [Multi Tenant](/enricher_{{page.version}}_multi_tenant.html)      |  false |
 | `metric.enable`      | Enable metrics system.      | false |
 | `global.topics`      | This property is used to not prefix application.id to both streams and tables to the topics at this list. More info [Multi Tenant](/enricher_{{page.version}}_multi_tenant.html).   | Empty list. |
 | `bypass.null.keys`      | This property is used to use a random key for incoming messages with null key. This may be useful when you want a message with null key bypass a join.  | false |

@@ -3,6 +3,7 @@ title: Normalizer Scalability
 version: 0.7.3
 permalink: /normalizer_0.7.3_scalability.html
 toc: false
+serviceImage: normalizer/logo.svg
 ---
 
 

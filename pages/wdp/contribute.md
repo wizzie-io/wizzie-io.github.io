@@ -74,7 +74,7 @@ Finally, go to _config.yml and do two steps:
       layout: "page"
       comments: true
       search: true
-      sidebar: wdp_1_0_0_sidebar
+      sidebar: wdp_1_0_X_sidebar
       topnav: wdp_topnav
 
 ```      

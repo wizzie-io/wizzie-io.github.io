@@ -1,6 +1,6 @@
 ---
 title: Terra-Box
-permalink: /wdp_1.0.0_terra-box_index.html
+permalink: /wdp_1.0.X_terra-box_index.html
 datatable: false
 toc: true
 serviceImage: terra-box/logo.png
@@ -94,4 +94,4 @@ In order to deploy a complete WDP we need to process all the involved components
 
 {% include image.html file="terra-box/Terra-BoxProcess.png" alt="Terra-Box Process" max-width=500 %}
 
-However, as we have seen, main modules and templates are not centralize. Thus, to apply `terraform` commands, a pre-processing is needed. This processing is made by [Prelude](wdp_1.0.0_wizzie_prelude_index.html).
+However, as we have seen, main modules and templates are not centralize. Thus, to apply `terraform` commands, a pre-processing is needed. This processing is made by [Prelude](wdp_1.0.X_wizzie_prelude_index.html).

@@ -1,6 +1,6 @@
 ---
 title: Indexer
-permalink: /wdp_1.0.0_indexer_index.html
+permalink: /wdp_1.0.X_indexer_index.html
 toc: true
 ---
 
@@ -51,7 +51,7 @@ The Stream Indexing is based on [Kafka Indexing Service](http://druid.io/docs/la
 
 ### Dimensions
 
-The dimensions are indexed like `STRING`. You use dimensions to aggregate data over them using [metrics](./wdp_1.0.0_indexer_index.html#metrics).
+The dimensions are indexed like `STRING`. You use dimensions to aggregate data over them using [metrics](./wdp_1.0.X_indexer_index.html#metrics).
 
 <table>
   <colgroup>
@@ -244,7 +244,7 @@ On this section, you can use any [Druid Firehose](http://druid.io/docs/latest/in
 
 ### Dimensions
 
-The dimensions are indexed like `STRING`. You use dimensions to aggregate data over them using [metrics](./wdp_1.0.0_indexer_index.html#metrics).
+The dimensions are indexed like `STRING`. You use dimensions to aggregate data over them using [metrics](./wdp_1.0.X_indexer_index.html#metrics).
 
 <table>
   <colgroup>

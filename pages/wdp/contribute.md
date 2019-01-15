@@ -1,6 +1,6 @@
 ---
-title: WDP 1.0.0
-permalink: /wdp_1.0.0_index.html
+title: WDP 1.0.X
+permalink: /contribute.html
 toc: false
 ---
 
@@ -59,7 +59,7 @@ Done!!
 
 In order to support a new WDP version, you should create a new folder inside pages/wdp/ with the new version name like pages/wdp/2.0.0 and add all your content.
 
-After that, you should add a new sidebar at "_data/sidebars/" like wdp_2.0.0_sidebar.yml fixing all service versions. 
+After that, you should add a new sidebar at "_data/sidebars/" like wdp_2.0.0_sidebar.yml fixing all service versions.
 Then, add the new version to wdp_topnav.yml in order to add it to the dropdown menu.
 Finally, go to _config.yml and do two steps:
 
@@ -74,7 +74,7 @@ Finally, go to _config.yml and do two steps:
       layout: "page"
       comments: true
       search: true
-      sidebar: wdp_1_0_0_sidebar
+      sidebar: wdp_1_0_X_sidebar
       topnav: wdp_topnav
 
 ```      
@@ -94,9 +94,9 @@ To the new version.
       search: true
       sidebar: wdp_2_0_0_sidebar
       topnav: wdp_topnav
-      
+
 ```
-      
+
 In this way, when a user enters to home, it will be at 2.0.0 (new version) but, when the new user changes the version in the dropdown menu, all the content will be set to that selected version.
 
 Done!!
@@ -116,7 +116,7 @@ If you want to use relative links (e.g. you want to link from one of your pages 
 page.version is a variable declared in the front matter. You can declare all variables you want. `version` is not used by jekyll. Is used by my content in order to avoid changes when I publish a new version. In that way I only need to update all front matters without changing every link.
 
 
-``` 
+```
 
 ---
 title: Normalizer Stream Configuration

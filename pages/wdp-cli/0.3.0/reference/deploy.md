@@ -79,9 +79,9 @@ No options.
 
 #### Examples
 
-- Set WDP deploy to use `1.0.0` WDP version
+- Set WDP deploy to use `1.0.X` WDP version
 ```
-wdp deploy use-version 1.0.0
+wdp deploy use-version 1.0.X
 ```
 
 ## Flavour management
@@ -398,9 +398,9 @@ applied automatically." %}
 
 #### Examples
 
-- Set `mobility` plugin version to `1.0.0`
+- Set `mobility` plugin version to `1.0.X`
 ```
-wdp deploy plugin use-version mobility -v 1.0.0
+wdp deploy plugin use-version mobility -v 1.0.X
 ```
 
 ## User component management

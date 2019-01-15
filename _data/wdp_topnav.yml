@@ -16,5 +16,5 @@ topnav_dropdowns:
   folders:
     - title: WDP Versions
       folderitems:
-        - title: WDP 1.0.0
+        - title: WDP 1.0.X
           url: /index.html

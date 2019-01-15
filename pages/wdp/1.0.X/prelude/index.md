@@ -1,6 +1,6 @@
 ---
 title: Overview
-permalink: /wdp_1.0.0_prelude_index.html
+permalink: /wdp_1.0.X_prelude_index.html
 datatable: false
 toc: false
 ---
@@ -18,5 +18,5 @@ Prelude is a ruby based library that allows to work with Terra-Box and simplifie
 Terra-Box, Prelude library and the different user interfaces like WDP-CLI make up the Prelude Ecosystem.
 
 Go ahead to the next section to know more about the Prelude Ecosystem components:
-* [Terra-Box](wdp_1.0.0_terra-box_index.html)
-* [Prelude](wdp_1.0.0_wizzie_prelude_index.html)
+* [Terra-Box](wdp_1.0.X_terra-box_index.html)
+* [Prelude](wdp_1.0.X_wizzie_prelude_index.html)

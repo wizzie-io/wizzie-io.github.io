@@ -1,11 +1,11 @@
 ---
 title: Prelude
-permalink: /wdp_1.0.0_wizzie_prelude_index.html
+permalink: /wdp_1.0.X_wizzie_prelude_index.html
 datatable: false
 toc: true
 ---
 
-Wizzie Prelude is a Ruby based library that allows to work with [Terra-Box](wdp_1.0.0_terra-box_index.html) and simplifies working with it. Furthermore, it allows to automate and manage WDP deployments in a collaborative way by using [GitOps](https://www.weave.works/blog/gitops-operations-by-pull-request){:target="_blank"} principles.
+Wizzie Prelude is a Ruby based library that allows to work with [Terra-Box](wdp_1.0.X_terra-box_index.html) and simplifies working with it. Furthermore, it allows to automate and manage WDP deployments in a collaborative way by using [GitOps](https://www.weave.works/blog/gitops-operations-by-pull-request){:target="_blank"} principles.
 
 ## Configuration
 
@@ -61,7 +61,7 @@ A deploy is composed by the following elements:
 
 * **Terra-Box**: Terra-Box git repository that is cloned in the local system.
 
-* **Vars**: Git repository where [Terra-Box templates](wdp_1.0.0_terra-box_index.html#templates) are stored. It is a clone of the branch **vars** of the **Storage repo**.
+* **Vars**: Git repository where [Terra-Box templates](wdp_1.0.X_terra-box_index.html#templates) are stored. It is a clone of the branch **vars** of the **Storage repo**.
 
 * **State**: Git repository where the [state](https://www.terraform.io/docs/state){:target="_blank"} (.tfstate file) of the deploy is saved after any Terraform operation. It is a clone of the branch **state** of the **Storage repo**.
 
@@ -205,7 +205,7 @@ There are many other aspects of a deploy that can be configured with Prelude. Th
 
 ```
 ---
-wdp_version: 1.0.0
+wdp_version: 1.0.X
 platform: onpremise
 flavour: standard
 plugins:

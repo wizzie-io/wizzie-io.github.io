@@ -73,50 +73,35 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      comments: true
       search: true
       sidebar: wdp_1_0_X_sidebar
       topnav: wdp_topnav
+      image: images/wizzie_logo.png
   -
     scope:
-      path: "pages/wdp/1.0.X"
+      path: "pages/normalizer"
       type: "pages"
     values:
-      layout: "page"
-      comments: true
-      search: true
-      sidebar: wdp_1_0_X_sidebar
-      topnav: wdp_topnav
+      image: /images/normalizer/logo.svg
+      topnav: normalizer_topnav
   -
     scope:
       path: "pages/normalizer/latest"
       type: "pages"
     values:
-      layout: "page"
-      comments: true
-      search: true
       sidebar: normalizer_latest_sidebar
-      topnav: normalizer_topnav
   -
     scope:
       path: "pages/normalizer/0.7.3"
       type: "pages"
     values:
-      layout: "page"
-      comments: true
-      search: true
       sidebar: normalizer_0_7_3_sidebar
-      topnav: normalizer_topnav
   -
     scope:
       path: "pages/normalizer/0.7.2"
       type: "pages"
     values:
-      layout: "page"
-      comments: true
-      search: true
       sidebar: normalizer_0_7_2_sidebar
-      topnav: normalizer_topnav
   -
     scope:
       path: "pages/normalizer-functions/latest"
@@ -132,31 +117,27 @@ defaults:
       path: "pages/wizz-vis/0.11.0"
       type: "pages"
     values:
-      layout: "page"
-      comments: true
-      search: true
       sidebar: wizz-vis_0_11_0_sidebar
       topnav: wizz-vis_topnav
+  -
+    scope:
+      path: "pages/enricher"
+      type: "pages"
+    values:
+      topnav: enricher_topnav
+      image: /images/enricher/logo.svg
   -
     scope:
       path: "pages/enricher/latest"
       type: "pages"
     values:
-      layout: "page"
-      comments: true
-      search: true
       sidebar: enricher_latest_sidebar
-      topnav: enricher_topnav
   -
     scope:
       path: "pages/enricher/0.6.1"
       type: "pages"
     values:
-      layout: "page"
-      comments: true
-      search: true
       sidebar: enricher_0_6_1_sidebar
-      topnav: enricher_topnav
   -
     scope:
       path: "pages/zz-cep/latest"
@@ -172,29 +153,26 @@ defaults:
       path: "pages/zz-cep/0.5.1"
       type: "pages"
     values:
-      layout: "page"
-      comments: true
-      search: true
       sidebar: zz-cep_0_5_1_sidebar
       topnav: zz-cep_topnav
+      image: images/zz-cep/logo.svg
+  -
+    scope:
+      path: "pages/zz-cep/0.5.1"
+      type: "pages"
+    values:
+      sidebar: zz-cep_0_5_1_sidebar
   -
     scope:
       path: "pages/zz-cep/latest"
       type: "pages"
     values:
-      layout: "page"
-      comments: true
-      search: true
       sidebar: zz-cep_latest_sidebar
-      topnav: zz-cep_topnav
   -
     scope:
       path: "pages/wdp-cli/0.3.0"
       type: "pages"
     values:
-      layout: "page"
-      comments: true
-      search: true
       sidebar: wdp-cli_0_3_0_sidebar
       topnav: wdp-cli_topnav
 
@@ -213,8 +191,26 @@ sidebars:
 - wdp-cli_0.3.0_sidebar
 - normalizer_latest_sidebar
 
-description: "WDP Project Website"
-# the description is used in the feed.xml file
+# SEO and Social config
+google_site_verification: 8G13iLMreJldVEWLkrZnzCNNoa4ywsYfzAoPydBJgPo
+
+title: WDP Project Documentation
+description: WDP Project Documentation
+url: https://wizzie-io.github.io
+logo: /images/wizzie_logo.png
+lang: 'en-US'
+
+twitter:
+  username: wizzieio
+  card: summary
+
+social:
+  name: Wizzie
+  links:
+    - https://twitter.com/wizzieio
+    - https://www.linkedin.com/company/wizzie
+    - https://github.com/wizzie-io
+
 
 # needed for sitemap.xml file only
 # url: http://idratherbewriting.com

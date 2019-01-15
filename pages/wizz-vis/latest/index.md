@@ -1,7 +1,7 @@
 ---
-title: Wizz-Vis 0.11.0
-permalink: /wizz-vis_0.11.0_index.html
-version: 0.11.0
+title: Wizz-Vis latest
+permalink: /wizz-vis_latest_index.html
+version: latest
 toc: false
 ---
 
@@ -22,7 +22,7 @@ Wizz-Vis is the web inteface used by Wizzie Data Platform (WDP).
 - [Redis](http://redis.io/){:target="_blank"} - We use Redis as a cache and for transient data.
 - [Druid](http://druid.io/){:target="_blank"} - We use Druid as a data store and use its API to make the queries.
 
-Also, a lots of Ruby Gems are used. You can find them at [/v0.11/Gemfile](https://github.com/wizzie-io/wizz-vis/blob/v0.11/Gemfile){:target="_blank"}.
+Also, a lots of Ruby Gems are used. You can find them at [/master/Gemfile](https://github.com/wizzie-io/wizz-vis/blob/master/Gemfile){:target="_blank"}.
 
 ## Contribute
 If you have any idea for an improvement or found a bug, please open an issue. But, if you prefer, you can clone this repo and submit a pull request, helping us make Wizz-Vis a better product.

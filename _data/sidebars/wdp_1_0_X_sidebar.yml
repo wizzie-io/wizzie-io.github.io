@@ -172,24 +172,8 @@ entries:
     output: web
 
     folderitems:
-    - title: Wizz-Vis configuration
-      url: /wizz-vis_0.11.0_configuration.html
-      output: web
-
-    - title: Basic Concepts
-      url: /wizz-vis_0.11.0_basic_concepts.html
-      output: web
-
-    - title: Navigation
-      url: /wizz-vis_0.11.0_navigation.html
-      output: web
-
-    - title: Widgets
-      url: /wizz-vis_0.11.0_widgets.html
-      output: web
-
-    - title: API
-      url: /wizz-vis_0.11.0_api.html
+    - title: Wizz-Vis
+      url: /wizz-vis_0.11.0_index.html
       output: web
 
   - title: Extending WDP - Plugins

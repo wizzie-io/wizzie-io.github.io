@@ -1,0 +1,76 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Wizz-Vis
+  version: latest
+  folders:
+
+  - title: Home
+    output: web
+    folderitems:
+    - title: Wizz-Vis latest Home
+      url: /wizz-vis_latest_index.html
+      output: web
+      type: homepage
+
+  - title: Getting Started
+    output: web
+    folderitems:
+    - title: Overview
+      url: /wizz-vis_latest_overview.html
+      output: web
+    - title: Deploy
+      url: /wizz-vis_latest_deploy.html
+      output: web
+
+  - title: Guides
+    output: web
+    folderitems:
+    - title: Basic Concepts
+      url: /wizz-vis_latest_basic_concepts.html
+      output: web
+    - title: Aggregators
+      url: /wizz-vis_latest_aggregators.html
+      output: web
+    - title: Dashboards
+      url: /wizz-vis_latest_dashboards.html
+      output: web
+    - title: Widgets
+      url: /wizz-vis_latest_widgets.html
+      output: web
+    - title: Compare
+      url: /wizz-vis_latest_compare.html
+      output: web
+    - title: Thresholds
+      url: /wizz-vis_latest_thresholds.html
+      output: web
+    - title: Drill Down
+      url: /wizz-vis_latest_drill_down.html
+      output: web
+    - title: Time Selector
+      url: /wizz-vis_latest_time_selector.html
+      output: web
+
+  - title: API
+    output: web
+    folderitems:
+    - title: Endpoints
+      url: /wizz-vis_latest_api_endpoints.html
+      output: web
+    - title: Examples
+      url: /wizz-vis_latest_api_examples.html
+      output: web
+
+  - title: Development
+    output: web
+    folderitems:
+    - title: Docker Compose
+      url: /wizz-vis_latest_docker_compose.html
+      output: web
+    - title: From Scratch
+      url: /wizz-vis_latest_from_scratch.html
+      output: web
+    - title: Testing
+      url: /wizz-vis_latest_testing.html
+      output: web

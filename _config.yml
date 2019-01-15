@@ -114,11 +114,23 @@ defaults:
       topnav: normalizer-functions_topnav
   -
     scope:
+      path: "pages/wizz-vis"
+      type: "pages"
+    values:
+      image: /images/wizz-vis/logo.svg
+      topnav: wizz-vis_topnav
+  -
+    scope:
+      path: "pages/wizz-vis/latest"
+      type: "pages"
+    values:
+      sidebar: wizz-vis_latest_sidebar
+  -
+    scope:
       path: "pages/wizz-vis/0.11.0"
       type: "pages"
     values:
       sidebar: wizz-vis_0_11_0_sidebar
-      topnav: wizz-vis_topnav
   -
     scope:
       path: "pages/enricher"

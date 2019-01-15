@@ -741,6 +741,21 @@ Also, the attributes that can be configured using options field are:
 
 ## Misc
 
+### Overwrite Interval
+
+Each widget could overwrite the global time interval set for the dashboard, using the attributes `range` or `start_time` and `end_time`. In that case, the widget will show, at the right of the title, the interval used.
+
+This information could be hidden through the options:
+
+```json
+{
+  "showOverrideInterval": true | false
+}
+
+```
+
+By default, the information will be shown.
+
 ### Coordinates
 
 The dimensions and aggregators could represent coordinates in the format `latitude,longitude`, i.e. `37.3509227,-6.0607913`. They have to be named using the regexp `/coordinate|latlong|latlng/`.

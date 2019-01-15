@@ -50,11 +50,11 @@ wdp deploy list-platforms
 {% include note.html content="supported platforms could be different for each 
 WDP version." %}
 
-For example, with this commands you can use 1.0.0 (Dance) version of WDP for on-premise
+For example, with this commands you can use 1.0.X (Dance) version of WDP for on-premise
 platform. 
 
 ```
-wdp deploy use-version 1.0.0
+wdp deploy use-version 1.0.X
 wdp deploy use-platform onpremise
 ```
 

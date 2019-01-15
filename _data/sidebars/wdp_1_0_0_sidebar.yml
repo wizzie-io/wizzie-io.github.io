@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: WDP Docs
-  version: 1.0.0
+  version: 1.0.X
   folders:
 
   - title: Introducing the Wizzie Data Platform (WDP)
@@ -32,27 +32,27 @@ entries:
     folderitems:
 
     - title: Setting up a WDP cluster (AWS marketplace)
-      url: /wdp_1.0.0_setting_up_aws.html
+      url: /wdp_1.0.X_setting_up_aws.html
       output: web
 
     - title: Creating an organization
-      url: /wdp_1.0.0_creating_organization.html
+      url: /wdp_1.0.X_creating_organization.html
       output: web
 
     - title: Collecting data with Prozzie
-      url: /wdp_1.0.0_collectng_data_prozzie.html
+      url: /wdp_1.0.X_collectng_data_prozzie.html
       output: web
 
     - title: Building the WDP workflow
-      url: /wdp_1.0.0_building_workflow.html
+      url: /wdp_1.0.X_building_workflow.html
       output: web
 
     - title: Working with Batuta endpoints
-      url: /wdp_1.0.0_working_batuta_endpoints.html
+      url: /wdp_1.0.X_working_batuta_endpoints.html
       output: web
 
     - title: Creating a simple dashboard
-      url: /wdp_1.0.0_creating_simple_dashboard.html
+      url: /wdp_1.0.X_creating_simple_dashboard.html
       output: web
 
   - title: WDP Overview (basic architecture)
@@ -60,11 +60,11 @@ entries:
     folderitems:
 
     - title: The WDP Architecture
-      url: /wdp_1.0.0_wdp_architecture.html
+      url: /wdp_1.0.X_wdp_architecture.html
       output: web
 
     - title: Global VS user components
-      url: /wdp_1.0.0_global_vs_user.html
+      url: /wdp_1.0.X_global_vs_user.html
       output: web
 
   - title: WDP Deploy Internals
@@ -72,15 +72,15 @@ entries:
     folderitems:
 
     - title: Prelude Ecosystem
-      url: /wdp_1.0.0_prelude_index.html
+      url: /wdp_1.0.X_prelude_index.html
       output: web
 
     - title: Terra-Box
-      url: /wdp_1.0.0_terra-box_index.html
+      url: /wdp_1.0.X_terra-box_index.html
       output: web
 
     - title: Wizzie Prelude library
-      url: /wdp_1.0.0_wizzie_prelude_index.html
+      url: /wdp_1.0.X_wizzie_prelude_index.html
       output: web
 
   - title: Prozzie
@@ -88,15 +88,15 @@ entries:
 
     folderitems:
     - title: Installation
-      url: /wdp_1.0.0_index.html
+      url: /wdp_1.0.X_index.html
       output: web
 
     - title: Connectors
-      url: /wdp_1.0.0_index.html
+      url: /wdp_1.0.X_index.html
       output: web
 
     - title: Prozzie CLI
-      url: /wdp_1.0.0_index.html
+      url: /wdp_1.0.X_index.html
       output: web
 
   - title: WDP Command Line Interface
@@ -112,15 +112,15 @@ entries:
 
     folderitems:
     - title: Create users
-      url: /wdp_1.0.0_index.html
+      url: /wdp_1.0.X_index.html
       output: web
 
     - title: Create organizations
-      url: /wdp_1.0.0_index.html
+      url: /wdp_1.0.X_index.html
       output: web
 
     - title: Manage API Keys
-      url: /wdp_1.0.0_index.html
+      url: /wdp_1.0.X_index.html
       output: web
 
   - title: Wizzie Workflow
@@ -145,7 +145,7 @@ entries:
       output: web
 
     - title: Indexer
-      url: /wdp_1.0.0_indexer_index.html
+      url: /wdp_1.0.X_indexer_index.html
       output: web
 
   - title: Manage the Stack with Batuta
@@ -153,19 +153,19 @@ entries:
 
     folderitems:
     - title: Kafka endpoints
-      url: /wdp_1.0.0_batuta_kafka.html
+      url: /wdp_1.0.X_batuta_kafka.html
       output: web
 
     - title: Druid endpoints
-      url: /wdp_1.0.0_batuta_druid.html
+      url: /wdp_1.0.X_batuta_druid.html
       output: web
 
     - title: Streams endpoints
-      url: /wdp_1.0.0_batuta_streams.html
+      url: /wdp_1.0.X_batuta_streams.html
       output: web
 
     - title: Workflow endpoints
-      url: /wdp_1.0.0_batuta_workflow.html
+      url: /wdp_1.0.X_batuta_workflow.html
       output: web
 
   - title: Visualize Data with Wizz-Vis
@@ -197,15 +197,15 @@ entries:
     folderitems:
 
     - title: What is a plugin?
-      url: /wdp_1.0.0_index.html
+      url: /wdp_1.0.X_index.html
       output: web
 
     - title: Available plugins
-      url: /wdp_1.0.0_index.html
+      url: /wdp_1.0.X_index.html
       output: web
 
     - title: Usage
-      url: /wdp_1.0.0_index.html
+      url: /wdp_1.0.X_index.html
       output: web
 
   - title: Scaling WDP
@@ -213,19 +213,19 @@ entries:
     folderitems:
 
     - title: Introducing flavors
-      url: /wdp_1.0.0_introducing_flavors.html
+      url: /wdp_1.0.X_introducing_flavors.html
       output: web
 
     - title: Scaling WDP components horizontally
-      url: /wdp_1.0.0_scaling_wdp_components.html
+      url: /wdp_1.0.X_scaling_wdp_components.html
       output: web
 
     - title: Scaling WDP resources
-      url: /wdp_1.0.0_scaling_wdp_resources.html
+      url: /wdp_1.0.X_scaling_wdp_resources.html
       output: web
 
     - title: Scaling the underlying infrastructure
-      url: /wdp_1.0.0_scaling_infrastructure.html
+      url: /wdp_1.0.X_scaling_infrastructure.html
       output: web
 
   - title: Appendix A. Troubleshooting WDP
@@ -233,23 +233,23 @@ entries:
     folderitems:
 
     - title: WDP Metrics
-      url: /wdp_1.0.0_wdp_metrics.html
+      url: /wdp_1.0.X_wdp_metrics.html
       output: web
 
     - title: Monitoring WDP components
-      url: /wdp_1.0.0_monitoring_wdp_components.html
+      url: /wdp_1.0.X_monitoring_wdp_components.html
       output: web
 
     - title: Analyzing logs
-      url:  /wdp_1.0.0_analyzing_logs.html
+      url:  /wdp_1.0.X_analyzing_logs.html
       output: web
 
     - title: Diagnosing the problem
-      url: /wdp_1.0.0_diagnosing_problem.html
+      url: /wdp_1.0.X_diagnosing_problem.html
       output: web
 
     - title: Common errors, Do’s & Dont’s
-      url: /wdp_1.0.0_common_errors.html
+      url: /wdp_1.0.X_common_errors.html
       output: web
 
   - title: Contributing to this doc

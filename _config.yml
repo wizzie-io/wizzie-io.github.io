@@ -79,7 +79,7 @@ defaults:
       topnav: wdp_topnav
   -
     scope:
-      path: "pages/wdp/1.0.0"
+      path: "pages/wdp/1.0.X"
       type: "pages"
     values:
       layout: "page"

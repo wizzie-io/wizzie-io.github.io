@@ -1,5 +1,5 @@
 ---
-title: WDP 1.0.0
+title: WDP 1.0.X
 permalink: /contribute.html
 toc: false
 ---

@@ -159,7 +159,7 @@ The StartWithFilter is a filter that allows us to filter if a specific dimension
           "className":"io.wizzie.normalizer.funcs.impl.StartWithFilter",
           "properties": {
             "dimension": "DIM-B",
-            "start_with": "FILTER"
+            "startWith": "FILTER"
           }
         }
       ],
@@ -173,7 +173,7 @@ The StartWithFilter is a filter that allows us to filter if a specific dimension
 
 The StartWithFilter has two properties called `dimension` and `start_with`:
 * `dimension`: Dimension of which we get the value to filter.
-* `start_with`: String to apply to value. If match then return `true` else return `false`.
+* `startWith`: String to apply to value. If match then return `true` else return `false`.
 
 If we have the next JSON message:
 

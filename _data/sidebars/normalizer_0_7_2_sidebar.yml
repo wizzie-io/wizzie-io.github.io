@@ -62,6 +62,9 @@ entries:
     - title: Filter Functions
       url: /normalizer_0.7.2_filter_functions.html
       output: web
+    - title: StoreMapper Functions
+      url: /normalizer_0.7.2_store_mapper_functions.html
+      output: web
     - title: Debug Functions
       url: /normalizer_0.7.2_debug_functions.html
       output: web

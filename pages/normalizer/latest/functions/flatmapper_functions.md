@@ -82,12 +82,12 @@ This flatMapper allows us to do a flatten array using all the other message fiel
   "name":"myArrayFlatMapper",
   "className":"io.wizzie.normalizer.funcs.impl.ArrayFlattenMapper",
   "properties": {
-    "flat_dimension": "my_array_dim"
+    "flatDimension": "my_array_dim"
   }
 }
 ```
 
-On this flatMapper, you only need to specify the property `flat_dimension`, **this dimension must be an Json Array**.
+On this flatMapper, you only need to specify the property `flatDimension`, **this dimension must be an Json Array**.
 
 **Input:**
 

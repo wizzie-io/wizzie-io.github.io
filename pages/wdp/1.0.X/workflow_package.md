@@ -6,14 +6,16 @@ toc: true
 
 ## Overview
 
+The Workflow Package allows to define all data stack pipeline processing using configuration files. You can export/import the pacakges by organization to configure different use-cases.
+
 ## Workflow Package Structure
 
 ```
 workflow_package.tar.gz
 ├── kafka
-│   ├── topics_1.json
-│   ├── topics_2.json
-│   └── topics_3.json
+│   ├── topics_group_1.json
+│   ├── topics_group_2.json
+│   └── topics_group_3.json
 ├── druid
 │   ├── datasource_name_1.json
 │   ├── datasource_name_2.json
@@ -27,6 +29,26 @@ workflow_package.tar.gz
 
 ### Kafka
 
+On this folder, you must create a file per each group of Kafka topics. The content of each file is something like this:
+
+```json
+[
+  {
+    "name": "topic_name_1",
+    "partitions": 1,
+    "replicas": 1,
+    "config": {}
+  },
+  {
+    "name": "topic_name_2",
+    "partitions": 1,
+    "replicas": 1,
+    "config": {}
+  }
+]
+```
+
+You can check [Kafka Topic Spec](./wdp_1.0.X_batuta_kafka.html)
 
 
 ### Druid
@@ -50,4 +72,4 @@ This folder has the three main stream-plans (normalizer, enricher, zz-cep). Insi
 There are two main methods to work with Workflow Packages:
 
 1. [Batuta endpoints](./wdp_1.0.X_batuta_workflow.html)
-2. [Wizz-In Workflow Management]()
+2. [Wizz-In Workflow Management](./wdp_1.0.X_workflow_package_management.html)

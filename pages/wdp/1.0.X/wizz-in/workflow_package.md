@@ -22,7 +22,7 @@ Using the `+`, you can select a [workflow_package.tar.gz](./wdp_1.0.X_workflow_p
 
 {% include note.html content="The Workflow Package add/update the different WDP stack resources to this organization. Doesn't remove!" %}
 
-The `UPLOAD` return a message where you can see which stack resource are created or if something have errors.
+The `UPLOAD` return a message where you can see which stack resource are created/updated or if something have errors.
 
 {% include image.html file="./wizz-in/wizz-in-workflow-management-upload.png" url="./images/wizz-in/wizz-in-workflow-management.png" alt="" caption="Wizz-In Workflow upload example" %}
 

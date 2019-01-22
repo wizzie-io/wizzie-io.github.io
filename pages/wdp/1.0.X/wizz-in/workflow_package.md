@@ -28,7 +28,7 @@ After `UPLOAD` is performed, it returns a message where you can see which stack 
 
 ### DOWNLOAD
 
-Generate a new workflow_package.tar.gz with the current stack resources status to this organization. and download it.
+Creates a new workflow_package.tar.gz file with the current stack resources status of the related organization and downloads it.
 
 ### DELETE
 

@@ -8,7 +8,7 @@ toc: true
 
 This section shows the [Workflow Package](./wdp_1.0.X_workflow_package.html) Management. It allows to download, upload and delete the Workflow Packages by organization.
 
-At bottom of organization main page, we can see this:
+At the bottom of the organization main page, we can see this section:
 
 {% include image.html file="./wizz-in/wizz-in-workflow-management.png" url="./images/wizz-in/wizz-in-workflow-management.png" alt="" caption="Wizz-In Workflow Package management" %}
 

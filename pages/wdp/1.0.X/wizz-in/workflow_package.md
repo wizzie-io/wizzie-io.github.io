@@ -6,7 +6,7 @@ toc: true
 
 ## Overview
 
-This section show the [Workflow Package](./wdp_1.0.X_workflow_package.html) Management. Allowing to download, upload and delete the Workflow Packages by organization.
+This section shows the [Workflow Package](./wdp_1.0.X_workflow_package.html) Management. It allows to download, upload and delete the Workflow Packages by organization.
 
 At bottom of organization main page, we can see this:
 

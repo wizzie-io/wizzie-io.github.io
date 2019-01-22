@@ -32,6 +32,6 @@ Creates a new workflow_package.tar.gz file with the current stack resources stat
 
 ### DELETE
 
-Remove all current stack resources to this organization.
+Removes every current stack resource of this organization.
 
 {% include warning.html content="When you `DELETE` the current workflow, you remove all stack resource to this organization. Maybe, remove live data, indexers, configurations!" %}

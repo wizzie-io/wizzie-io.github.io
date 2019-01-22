@@ -20,7 +20,7 @@ Using the interface, you can do the different operations:
 
 Using the `+`, you can select a [workflow_package.tar.gz](./wdp_1.0.X_workflow_package.html) and upload to the platform.
 
-{% include note.html content="The Workflow Package add/update the different WDP stack resources to this organization. Doesn't remove!" %}
+{% include note.html content="The Workflow Package adds/updates WDP stack resources of the organization where it is uploaded. This action doesn't remove resources created before." %}
 
 The `UPLOAD` return a message where you can see which stack resource are created/updated or if something have errors.
 

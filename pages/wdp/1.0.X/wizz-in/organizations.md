@@ -1,12 +1,12 @@
 ---
-title: Create organizations
-permalink: /wdp_1.0.X_create_organizations.html
+title: Manage organizations
+permalink: /wdp_1.0.X_manage_organizations.html
 toc: true
 ---
 
 ## Overview
 
-This section shows how to manage organizations. It allows you to create, edit and delete organizations.
+This section shows how to manage organizations. It allows you to create, edit and delete organizations if you have administrative privileges or if you are the owner of the organization to edit or delete.
 
 In the main section of organizations, we can see this:
 

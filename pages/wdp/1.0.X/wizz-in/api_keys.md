@@ -6,7 +6,7 @@ toc: true
 
 ## Overview
 
-This section shows how to manage API Keys. It allows you to create and delete API Keys by organization.
+This section shows how to manage API Keys. It allows you to create and delete API Keys by organization if you have administrative privileges or if you are the owner of the organization.
 
 On the main page of the organization, we can see this section:
 

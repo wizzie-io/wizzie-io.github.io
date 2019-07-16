@@ -102,16 +102,20 @@ entries:
     output: web
 
     folderitems:
-    - title: Create users
-      url: /wdp_1.0.X_index.html
+    - title: Overview
+      url: /wdp_1.0.X_wizz-in-overview.html
       output: web
 
-    - title: Create organizations
-      url: /wdp_1.0.X_index.html
+    - title: Manage organizations
+      url: /wdp_1.0.X_manage_organizations.html
+      output: web
+
+    - title: Manage users
+      url: /wdp_1.0.X_manage_users.html
       output: web
 
     - title: Manage API Keys
-      url: /wdp_1.0.X_index.html
+      url: /wdp_1.0.X_manage_api_keys.html
       output: web
 
     - title: Workflow Package management

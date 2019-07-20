@@ -29,6 +29,10 @@ entries:
       url: /prozzie_0.7.0_protocols.html
       output: web
       type: homepage
+    - title: HTTPS Integration
+      url: /prozzie_0.7.0_https.html
+      output: web
+      type: homepage
     - title: FAQs
       url: /prozzie_0.7.0_faqs.html
       output: web
@@ -37,4 +41,3 @@ entries:
       url: /prozzie_0.7.0_contributing.html
       output: web
       type: homepage
-      

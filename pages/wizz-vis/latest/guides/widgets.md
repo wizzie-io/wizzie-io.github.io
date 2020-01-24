@@ -430,12 +430,25 @@ x-y points are references for a image point starting at top-left corner of the i
 
 To keep the proportions of the used image, we have to use `keep_ratio` property.
 
+A radius for the points can be setted through the `radio` option. If not, its default value would be 10.
+
+The play mode can be activated through the `playMode` option. If no value is provided for cadence, it will be 1000. If no value is provided for granularity, it will be 1 minute.
+
 The `options` attribute would be as follows:
 
 ```json
 {
   "image": "https://www.bookingtaxibarcelona.com/wp-content/uploads/2015/03/fira-gran-via-map.png",
   "keep_ratio": true,
+  "radius": 5,
+  "playMode": {
+    "enabled": true | false,
+    "cadence": 1000 <miliseconds>,
+    "granularity": {
+      "value": 1 <number>,
+      "unit": minute | hour | day
+    }
+  }
   "gps_markers": [
     { "x": 261, "y": 208, "latitude": 41.355151, "longitude": 2.127733 },
     { "x": 530, "y": 217, "latitude": 41.357172, "longitude": 2.130533 },

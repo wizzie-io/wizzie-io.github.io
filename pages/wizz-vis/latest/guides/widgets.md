@@ -432,7 +432,7 @@ To keep the proportions of the used image, we have to use `keep_ratio` property.
 
 A radius for the points can be setted through the `radio` option. If not, its default value would be 10.
 
-The play mode can be activated through the `playMode` option. If no value is provided for cadence, it will be 1000. If no value is provided for granularity, it will be 1 minute.
+The play mode can be activated through the `playMode` option. If no value is provided for cadence, it will be 1000. If no value is provided for granularity, it will be 1 minute. If no value is provided for the position of the legend, default is top.
 
 The `options` attribute would be as follows:
 
@@ -447,6 +447,10 @@ The `options` attribute would be as follows:
     "granularity": {
       "value": 1 <number>,
       "unit": minute | hour | day
+    },
+    "legend": {
+      "enabled": true | false,
+      "position": "top" | "bottom"
     }
   }
   "gps_markers": [
